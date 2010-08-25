@@ -1,0 +1,429 @@
+19:59:16,653 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+19:59:16,945 (main) ERROR [DataNucleus.Plugin] - Bundle "org.datanucleus.store.appengine" requires "org.datanucleus" version "[1.0.4, 1.1.5.final)" but the resolved bundle has version "1.0.7.final" which is outside the expected range.
+19:59:16,946 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+19:59:16,946 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+19:59:17,078 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+19:59:17,209 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+19:59:17,316 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+19:59:17,321 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+19:59:17,322 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+19:59:17,323 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+19:59:17,336 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+19:59:17,337 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+19:59:17,338 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+19:59:17,358 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+19:59:17,359 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+19:59:17,361 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+19:59:17,489 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+19:59:17,495 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=305 ms, enhance=107 ms, total=412 ms. Consult the log for full details
+20:05:20,871 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:05:21,124 (main) ERROR [DataNucleus.Plugin] - Bundle "org.datanucleus.store.appengine" requires "org.datanucleus" version "[1.0.4, 1.1.5.final)" but the resolved bundle has version "1.0.7.final" which is outside the expected range.
+20:05:21,124 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:05:21,124 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:05:21,204 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:05:21,362 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+20:05:21,491 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:05:21,492 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:05:21,493 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:05:21,494 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:05:21,495 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:05:21,500 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:05:21,501 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:05:21,503 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:05:21,513 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:05:21,515 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:05:21,517 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:05:21,592 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+20:05:21,597 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=316 ms, enhance=69 ms, total=385 ms. Consult the log for full details
+20:06:01,404 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:06:01,655 (main) ERROR [DataNucleus.Plugin] - Bundle "org.datanucleus.store.appengine" requires "org.datanucleus" version "[1.0.4, 1.1.5.final)" but the resolved bundle has version "1.0.7.final" which is outside the expected range.
+20:06:01,656 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:06:01,656 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:06:01,750 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:06:01,959 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+20:06:02,196 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:06:02,197 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:06:02,198 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:06:02,199 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:06:02,199 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:06:02,203 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:06:02,204 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:06:02,205 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:06:02,214 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:06:02,214 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:06:02,215 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:06:02,286 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+20:06:02,292 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=470 ms, enhance=68 ms, total=538 ms. Consult the log for full details
+20:23:04,927 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:23:05,222 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:23:05,222 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:23:05,292 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:23:05,402 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+20:23:05,455 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:23:05,456 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:23:05,461 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:23:05,462 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:23:05,463 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:23:05,470 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:23:05,471 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:23:05,472 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:23:05,492 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:23:05,501 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:23:05,502 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:23:05,595 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+20:23:05,596 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=218 ms, enhance=73 ms, total=291 ms. Consult the log for full details
+20:25:50,080 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:25:50,385 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:25:50,385 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:25:50,445 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:25:50,565 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+20:25:50,640 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:25:50,641 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:25:50,642 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:25:50,642 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:25:50,643 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:25:50,647 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:25:50,648 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:25:50,649 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:25:50,674 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:25:50,675 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:25:50,676 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:25:50,760 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+20:25:50,761 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=239 ms, enhance=71 ms, total=310 ms. Consult the log for full details
+20:26:51,954 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:26:52,388 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:26:52,388 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:26:52,552 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:26:52,795 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+20:26:53,001 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:26:53,002 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:26:53,003 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:26:53,003 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:26:53,004 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:26:53,008 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:26:53,020 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:26:53,021 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:26:53,027 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:26:53,049 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:26:53,050 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:26:53,051 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:26:53,228 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+20:26:53,228 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=505 ms, enhance=156 ms, total=661 ms. Consult the log for full details
+20:26:53,490 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:26:53,490 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:26:53,546 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:26:53,746 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+20:26:53,885 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:26:53,889 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:26:53,890 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:26:53,890 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:26:53,891 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:26:53,899 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:26:53,908 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:26:53,909 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:26:53,931 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:26:53,932 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:26:53,933 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:26:53,970 (main) INFO  [DataNucleus.Enhancer] - Class "br.com.bufunfa.finance.conta.ContaImpl" is already enhanced.
+20:26:53,971 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=385 ms, enhance=29 ms, total=414 ms. Consult the log for full details
+20:31:02,483 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:31:02,912 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:31:02,912 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:31:02,988 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:31:03,364 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+20:31:03,578 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:31:03,580 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:31:03,588 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:31:03,589 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:31:03,590 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:31:03,611 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:31:03,624 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:31:03,626 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:31:03,667 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:31:03,668 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:31:03,669 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:31:03,926 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+20:31:03,927 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=704 ms, enhance=213 ms, total=917 ms. Consult the log for full details
+20:31:04,930 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:31:05,491 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:31:05,492 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:31:05,568 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:31:05,693 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+20:31:05,777 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:31:05,778 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:31:05,779 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:31:05,780 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:31:05,780 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:31:05,784 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:31:05,785 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:31:05,792 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:31:05,801 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:31:05,802 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:31:05,803 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:31:05,891 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+20:31:05,891 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=239 ms, enhance=80 ms, total=319 ms. Consult the log for full details
+20:31:35,462 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:31:35,823 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:31:35,823 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:31:35,900 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:31:36,152 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+20:31:36,308 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:31:36,313 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:31:36,314 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:31:36,316 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:31:36,317 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:31:36,327 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:31:36,331 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:31:36,332 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:31:36,363 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:31:36,364 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:31:36,400 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:31:36,543 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+20:31:36,544 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=512 ms, enhance=114 ms, total=626 ms. Consult the log for full details
+20:31:36,636 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:31:36,881 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:31:36,881 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:31:36,937 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:31:37,069 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+20:31:37,202 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:31:37,204 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:31:37,204 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:31:37,205 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:31:37,206 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:31:37,210 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:31:37,210 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:31:37,211 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:31:37,227 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:31:37,228 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:31:37,229 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:31:37,265 (main) INFO  [DataNucleus.Enhancer] - Class "br.com.bufunfa.finance.conta.ContaImpl" is already enhanced.
+20:31:37,268 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=295 ms, enhance=31 ms, total=326 ms. Consult the log for full details
+20:32:07,431 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:32:07,698 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:32:07,698 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:32:07,773 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:32:07,948 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+20:32:08,001 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:32:08,006 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:32:08,007 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:32:08,008 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:32:08,008 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:32:08,012 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:32:08,013 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:32:08,014 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:32:08,023 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:32:08,024 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:32:08,025 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:32:08,088 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+20:32:08,089 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=243 ms, enhance=56 ms, total=299 ms. Consult the log for full details
+20:33:25,911 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:33:26,427 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:33:26,427 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:33:26,511 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:33:26,563 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:33:26,931 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+20:33:27,047 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:33:27,047 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:33:27,077 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:33:27,078 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:33:27,079 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:33:27,079 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:33:27,080 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:33:27,084 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:33:27,085 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:33:27,086 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:33:27,101 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:33:27,102 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:33:27,103 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:33:27,197 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+20:33:27,198 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=588 ms, enhance=86 ms, total=674 ms. Consult the log for full details
+20:33:27,248 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:33:27,412 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+20:33:27,490 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:33:27,491 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:33:27,492 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:33:27,493 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:33:27,494 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:33:27,497 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:33:27,498 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:33:27,499 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:33:27,515 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:33:27,516 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:33:27,517 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:33:27,557 (main) INFO  [DataNucleus.Enhancer] - Class "br.com.bufunfa.finance.conta.ContaImpl" is already enhanced.
+20:33:27,557 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=261 ms, enhance=32 ms, total=293 ms. Consult the log for full details
+20:33:57,341 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:33:57,580 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:33:57,581 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:33:57,700 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:33:57,861 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+20:33:57,943 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:33:57,944 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:33:57,945 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:33:57,946 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:33:57,946 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:33:57,950 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:33:57,951 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:33:57,952 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:33:57,968 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:33:57,968 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:33:57,969 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:33:58,090 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+20:33:58,091 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=265 ms, enhance=114 ms, total=379 ms. Consult the log for full details
+20:34:27,851 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:34:28,116 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:34:28,116 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:34:28,196 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:34:28,366 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+20:34:28,451 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:34:28,452 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:34:28,453 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:34:28,454 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:34:28,454 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:34:28,458 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:34:28,459 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:34:28,460 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:34:28,469 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:34:28,470 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:34:28,471 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:34:28,535 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+20:34:28,535 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=280 ms, enhance=56 ms, total=336 ms. Consult the log for full details
+20:34:39,738 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:34:40,068 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:34:40,068 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:34:40,146 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:34:40,287 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+20:34:40,370 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:34:40,371 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:34:40,372 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:34:40,373 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:34:40,389 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:34:40,392 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:34:40,393 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:34:40,394 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:34:40,412 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:34:40,412 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:34:40,413 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:34:40,496 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+20:34:40,497 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=271 ms, enhance=74 ms, total=345 ms. Consult the log for full details
+20:35:25,623 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:35:25,935 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:35:25,936 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:35:26,042 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:35:26,231 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+20:35:26,328 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:35:26,329 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:35:26,333 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:35:26,333 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:35:26,334 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:35:26,346 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:35:26,347 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:35:26,348 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:35:26,371 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:35:26,371 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:35:26,373 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:35:26,487 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+20:35:26,488 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=345 ms, enhance=98 ms, total=443 ms. Consult the log for full details
+20:39:21,443 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:39:21,671 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:39:21,671 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:39:21,735 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:39:21,902 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+20:39:21,968 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:39:21,969 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:39:21,970 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:39:21,971 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:39:21,971 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:39:21,975 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:39:21,976 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:39:21,977 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:39:22,007 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:39:22,008 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:39:22,009 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:39:22,087 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+20:39:22,087 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=285 ms, enhance=61 ms, total=346 ms. Consult the log for full details
+20:44:11,707 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:44:12,052 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:44:12,052 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:44:12,130 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:44:12,293 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+20:44:12,339 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:44:12,340 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:44:12,341 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:44:12,342 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:44:12,343 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:44:12,347 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:44:12,348 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:44:12,349 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:44:12,359 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:44:12,360 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:44:12,361 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:44:12,426 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+20:44:12,426 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=235 ms, enhance=57 ms, total=292 ms. Consult the log for full details
+20:44:37,144 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:44:37,572 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:44:37,573 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:44:37,667 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:44:37,897 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+20:44:38,033 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:44:38,035 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:44:38,035 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:44:38,040 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:44:38,041 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:44:38,048 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:44:38,059 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:44:38,060 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:44:38,087 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:44:38,096 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:44:38,098 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:44:38,259 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+20:44:38,269 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=457 ms, enhance=132 ms, total=589 ms. Consult the log for full details
+20:44:38,431 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:44:38,978 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:44:38,979 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:44:39,095 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:44:39,177 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has no MetaData or annotations.
+20:44:39,178 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:44:39,179 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:44:39,180 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:44:39,181 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:44:39,182 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:44:39,216 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:44:39,217 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:44:39,244 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:44:39,258 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:44:39,259 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:44:39,260 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:44:39,265 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 0 classes. Timings : input=155 ms, enhance=0 ms, total=155 ms. Consult the log for full details
+20:44:39,272 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed and no classes were enhanced. Consult the log for full details
+20:45:03,055 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:45:03,408 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:45:03,408 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:45:03,524 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:45:03,862 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+20:45:04,044 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:45:04,045 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:45:04,047 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:45:04,084 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:45:04,085 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:45:04,086 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:45:04,308 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+20:45:04,309 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=595 ms, enhance=183 ms, total=778 ms. Consult the log for full details
+20:45:04,501 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:45:04,797 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:45:04,798 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:45:04,873 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:45:05,090 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+20:45:05,177 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:45:05,178 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:45:05,189 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:45:05,190 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:45:05,190 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:45:05,194 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:45:05,195 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:45:05,196 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:45:05,217 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:45:05,218 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:45:05,219 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:45:05,295 (main) INFO  [DataNucleus.Enhancer] - Class "br.com.bufunfa.finance.conta.ContaImpl" is already enhanced.
+20:45:05,296 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=353 ms, enhance=61 ms, total=414 ms. Consult the log for full details

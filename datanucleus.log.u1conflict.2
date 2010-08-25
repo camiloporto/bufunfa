@@ -1,0 +1,32 @@
+20:47:29,805 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:47:30,052 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:47:30,052 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:47:30,122 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:47:30,213 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+20:47:30,237 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:47:30,241 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:47:30,241 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:47:30,242 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:47:30,243 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:47:30,252 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:47:30,253 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:47:30,254 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:47:30,262 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:47:30,263 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:47:30,264 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:47:30,265 (main) ERROR [DataNucleus.MetaData] - Class br.com.bufunfa.finance.conta.ContaImpl has application-identity and no objectid-class specified yet has 0 primary key fields. Unable to use SingleFieldIdentity.
+20:47:30,266 (main) ERROR [DataNucleus.Enhancer] - DataNucleus Enhancer completed with an error. Please review the enhancer log for full details. Some classes may have been enhanced but some caused errors
+Class br.com.bufunfa.finance.conta.ContaImpl has application-identity and no objectid-class specified yet has 0 primary key fields. Unable to use SingleFieldIdentity.
+org.datanucleus.metadata.InvalidMetaDataException: Class br.com.bufunfa.finance.conta.ContaImpl has application-identity and no objectid-class specified yet has 0 primary key fields. Unable to use SingleFieldIdentity.
+	at org.datanucleus.metadata.AbstractClassMetaData.determineObjectIdClass(AbstractClassMetaData.java:1032)
+	at org.datanucleus.metadata.ClassMetaData.populate(ClassMetaData.java:205)
+	at org.datanucleus.metadata.MetaDataManager$1.run(MetaDataManager.java:2322)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.datanucleus.metadata.MetaDataManager.populateAbstractClassMetaData(MetaDataManager.java:2316)
+	at org.datanucleus.metadata.MetaDataManager.populateFileMetaData(MetaDataManager.java:2153)
+	at org.datanucleus.metadata.MetaDataManager.initialiseFileMetaDataForUse(MetaDataManager.java:864)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:433)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+20:47:30,267 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed and no classes were enhanced. Consult the log for full details
