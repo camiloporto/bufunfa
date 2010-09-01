@@ -16,4 +16,10 @@
 		<managed-bean-scope>session</managed-bean-scope>
 	</managed-bean>
 	
+	<managed-bean>
+		<managed-bean-class>br.com.bufunfa.finance.wui.UIMain</managed-bean-class>
+		<managed-bean-name>Main</managed-bean-name>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	
  </faces-config>

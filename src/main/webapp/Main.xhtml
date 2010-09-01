@@ -5,16 +5,15 @@
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:p="http://primefaces.prime.com.tr/ui">
 
+<body>
 	<ui:composition template="/Template.xhtml">
 	
 		<ui:define name="pageContent">
-			<h1>Contas Aqui</h1>
-			<h:form>
-				<p:commandButton value="Transacoes" rendered="#{!Conta.contaActive}"/>
-				<p:commandButton value="Contas" rendered="#{Conta.contaActive}"/>
-			</h:form>
+			<p:panel>
+				<ui:include src="#{Main.activePlace}" />
+			</p:panel>
 		</ui:define>
 
 	</ui:composition>
-
+</body>
 </html>

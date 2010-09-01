@@ -7,45 +7,49 @@ import java.io.Serializable;
 
 import javax.annotation.Resource;
 
+import org.primefaces.model.DefaultTreeNode;
+import org.primefaces.model.TreeNode;
+import org.springframework.roo.addon.javabean.RooJavaBean;
+
 /**
  * @author camilo
  *
  */
 @Resource(name="UIConta")
+@RooJavaBean
 public class UIConta implements Serializable {
 	
-	private boolean contaActive = false;
 	
-	/**
-	 * TODO Refatorar .xhtmls para alterar conteudo principal da pagina atraves do atributo "rendered"
-	 * e nao com navegacao JSF. Nos templates, inserir tags "include" com atributo rendered de acordo com
-	 * a tela que deve ser apresentada		cd
-	 */
-
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 3637894640907136286L;
 	
+	private TreeNode receitaRoot;
+	
+	private TreeNode despesaRoot;
+	
+	private TreeNode ativoRoot;
+	
+	private TreeNode passivoRoot;
+	
 	
 	public UIConta() {
 		
+		/**
+		 * TODO Incrementar essa classe para desenhar todas as contas de 
+		 * receitas/despesas/ativo/passivo. Organizar layout da tela tambem
+		 */
+		receitaRoot = new DefaultTreeNode("Receitas", null);  
+        TreeNode node0 = new DefaultTreeNode("Salario", receitaRoot);
+        TreeNode node1 = new DefaultTreeNode("Acoes", receitaRoot);  
+        TreeNode node2 = new DefaultTreeNode("Tesouro Direto", receitaRoot);  
+          
+        TreeNode node10 = new DefaultTreeNode("PETR4", node1);  
+        TreeNode node11 = new DefaultTreeNode("VALE5", node1);  
+          
 	}
 	
-	public String goTransacao() {
-		contaActive = false;
-		System.out.println("UIConta.go to transacao");
-		return null;
-	}
 	
-	public String goConta() {
-		contaActive = true;
-		System.out.println("UIConta.go to conta");
-		return null;
-	}
 	
-	public boolean isContaActive() {
-		return contaActive;
-	}
-
 }

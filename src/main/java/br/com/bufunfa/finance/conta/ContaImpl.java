@@ -1,5 +1,6 @@
 package br.com.bufunfa.finance.conta;
 
+import java.util.HashSet;
 import java.util.Set;
 import javax.persistence.Entity;
 import org.springframework.roo.addon.javabean.RooJavaBean;
@@ -42,7 +43,7 @@ public class ContaImpl {
 
     public Set<ContaImpl> getChildren() {
     	//TODO Verificar como usar o finder para recuupear as contas
-    	return findContaImplsByIdFather(getId()).getResultList();
+    	return new HashSet<ContaImpl>(findContaImplsByIdFather(getId()).getResultList());
 //        return null;
     }
 
