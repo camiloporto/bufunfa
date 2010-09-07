@@ -24,6 +24,13 @@
 		
 		<!-- ########## Repositorios das dependencias do bufunfa -->
 		<repository>
+	    	<id>maven2-repository.dev.java.net</id>
+	    	<name>Java.net Repository for Maven</name>
+	    	<url>http://download.java.net/maven/2/</url>
+	    	<layout>default</layout>
+		</repository>
+	
+		<repository>
 			<id>prime-repo</id>
 			<name>Prime Technology Maven Repository</name>
 			<url>http://repository.prime.com.tr</url>
@@ -118,7 +125,28 @@
 			<artifactId>jsf-facelets</artifactId>
 			<version>${facelets.version}</version>
 		</dependency>
-		<!-- Apache MyFaces -->
+		
+		<!-- Dependencia do JSF - RI -->
+		
+		<dependency>
+		    <groupId>javax.faces</groupId>
+		    <artifactId>jsf-api</artifactId>
+		    <version>1.2_13</version>
+		</dependency>
+		<dependency>
+		    <groupId>javax.faces</groupId>
+		    <artifactId>jsf-impl</artifactId>
+		    <version>1.2_13</version>
+		</dependency>
+		
+		<dependency>
+	    	<groupId>com.sun.el</groupId>
+	    	<artifactId>el-ri</artifactId>
+	    	<version>1.0</version>
+            <scope>runtime</scope>
+		</dependency>
+		
+		<!-- Apache MyFaces 
 		<dependency>
 			<groupId>org.apache.myfaces.core</groupId>
 			<artifactId>myfaces-api</artifactId>
@@ -129,6 +157,7 @@
 			<artifactId>myfaces-impl</artifactId>
 			<version>${myfaces.version}</version>
 		</dependency>
+		-->
 		
 		<!-- Dependencia PrimeFaces -->
 		<dependency>
@@ -432,6 +461,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <!-- 
     <dependency>
             <groupId>org.tuckey</groupId>
             <artifactId>urlrewritefilter</artifactId>
@@ -443,6 +473,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
+         -->
     <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
@@ -459,6 +490,7 @@
             <artifactId>joda-time</artifactId>
             <version>1.6</version>
         </dependency>
+        <!-- 
     <dependency>
             <groupId>org.apache.tiles</groupId>
             <artifactId>tiles-core</artifactId>
@@ -470,11 +502,13 @@
                 </exclusion>
             </exclusions>
         </dependency>
+         
     <dependency>
             <groupId>org.apache.tiles</groupId>
             <artifactId>tiles-jsp</artifactId>
             <version>2.2.1</version>
         </dependency>
+        -->
     </dependencies>
 	<build>
 		<plugins>
