@@ -308,7 +308,7 @@
             <groupId>org.datanucleus</groupId>
             <artifactId>datanucleus-core</artifactId>
             <version>${datanucleus.version}</version>
-            <scope>test</scope>
+            <scope>runtime</scope>
             <exclusions>
                 <exclusion>
                     <groupId>javax.transaction</groupId>

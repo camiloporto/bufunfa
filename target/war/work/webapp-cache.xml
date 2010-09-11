@@ -21,16 +21,6 @@
           <string>WEB-INF/i18n/messages.properties</string>
           <string>WEB-INF/i18n/messages_nl.properties</string>
           <string>WEB-INF/i18n/messages_sv.properties</string>
-          <string>WEB-INF/lib/appengine-api-labs-1.3.7.jar</string>
-          <string>WEB-INF/lib/appengine-api-1.0-sdk-1.3.7.jar</string>
-          <string>WEB-INF/lib/datanucleus-core-1.1.5.jar</string>
-          <string>WEB-INF/lib/jdo2-api-2.3-eb.jar</string>
-          <string>WEB-INF/lib/datanucleus-jpa-1.1.5.jar</string>
-          <string>WEB-INF/lib/datanucleus-appengine-1.0.7.final.jar</string>
-          <string>WEB-INF/lib/geronimo-jpa_3.0_spec-1.1.1.jar</string>
-          <string>WEB-INF/lib/jsr107cache-1.1.jar</string>
-          <string>WEB-INF/lib/appengine-jsr107cache-1.3.7.jar</string>
-          <string>WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar</string>
           <string>WEB-INF/appengine-web.xml</string>
           <string>WEB-INF/.faces-config.xml.jsfdia</string>
           <string>WEB-INF/classes/alt.properties</string>
@@ -82,10 +72,14 @@
           <string>WEB-INF/lib/spring-context-support-3.0.2.RELEASE.jar</string>
           <string>WEB-INF/lib/spring-tx-3.0.2.RELEASE.jar</string>
           <string>WEB-INF/lib/persistence-api-1.0.jar</string>
+          <string>WEB-INF/lib/datanucleus-core-1.1.6.jar</string>
+          <string>WEB-INF/lib/datanucleus-jpa-1.1.5.jar</string>
+          <string>WEB-INF/lib/geronimo-jpa_3.0_spec-1.1.1.jar</string>
           <string>WEB-INF/lib/datanucleus-rdbms-1.1.6.jar</string>
           <string>WEB-INF/lib/transaction-api-1.1.jar</string>
           <string>WEB-INF/lib/datanucleus-enhancer-1.1.4.jar</string>
           <string>WEB-INF/lib/asm-3.2.jar</string>
+          <string>WEB-INF/lib/jdo2-api-2.3-eb.jar</string>
           <string>WEB-INF/lib/hibernate-validator-4.0.2.GA.jar</string>
           <string>WEB-INF/lib/validation-api-1.0.0.GA.jar</string>
           <string>WEB-INF/lib/cglib-nodep-2.2.jar</string>
@@ -405,7 +399,7 @@
         <artifactId>datanucleus-core</artifactId>
         <version>1.1.6</version>
         <type>jar</type>
-        <scope>test</scope>
+        <scope>runtime</scope>
         <exclusions>
           <org.apache.maven.model.Exclusion>
             <artifactId>transaction-api</artifactId>
@@ -414,6 +408,7 @@
         </exclusions>
         <optional>false</optional>
       </dependency>
+      <targetFileName>datanucleus-core-1.1.6.jar</targetFileName>
     </org.apache.maven.plugin.war.util.DependencyInfo>
     <org.apache.maven.plugin.war.util.DependencyInfo>
       <dependency>

@@ -6,17 +6,17 @@
       xmlns:p="http://primefaces.prime.com.tr/ui">
       
     <head>
-<!--		<p:resources />-->
-		<link rel="stylesheet" type="text/css" href="/css/finance.css" />
+    	<link rel="stylesheet" type="text/css" href="/css/finance.css" />
+		<p:resources />
 	</head>
 
 	<p:layout fullPage="true">
 	
 		<p:layoutUnit position="top" height="100" resizable="false" closable="false" collapsible="false">
-			<h1>Cabecalho Aqui</h1>
+			<h1 id="cabecalho">Cabecalho Aqui 2</h1>
 		</p:layoutUnit>
 		
-		<p:layoutUnit position="bottom" height="120" resizable="false" closable="false" collapsible="false">
+		<p:layoutUnit position="bottom" height="120" resizable="false" closable="false" collapsible="false" style="background-color: gray;">
 			<h:form id="menuForm">
 				<p:dock position="bottom">
 					<p:menuitem value="Contas" icon="/images/contas.png" action="#{Main.goConta}" update="conteudo"/>

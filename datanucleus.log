@@ -3289,3 +3289,5 @@ org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.inde
 
 10:40:43,273 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
 10:40:43,274 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=660 ms, enhance=222 ms, total=882 ms. Consult the log for full details
+10:59:10,821 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+10:59:13,197 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
