@@ -2214,3 +2214,1078 @@ org.datanucleus.metadata.InvalidMetaDataException: Class br.com.bufunfa.finance.
 	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
 	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
 00:47:53,222 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed and no classes were enhanced. Consult the log for full details
+22:03:00,647 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+22:03:00,877 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+22:03:00,877 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+22:03:00,950 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+22:03:01,077 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+22:03:01,120 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+22:03:01,121 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+22:03:01,122 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" has no MetaData or annotations.
+22:03:01,123 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+22:03:01,124 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+22:03:01,125 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+22:03:01,141 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" has no MetaData or annotations.
+22:03:01,142 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" has no MetaData or annotations.
+22:03:01,143 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+22:03:01,144 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+22:03:01,145 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+22:03:01,152 (main) ERROR [DataNucleus.MetaData] - Class br.com.bufunfa.finance.conta.ContaImpl has application-identity and no objectid-class specified yet has 0 primary key fields. Unable to use SingleFieldIdentity.
+22:03:01,153 (main) ERROR [DataNucleus.Enhancer] - DataNucleus Enhancer completed with an error. Please review the enhancer log for full details. Some classes may have been enhanced but some caused errors
+Class br.com.bufunfa.finance.conta.ContaImpl has application-identity and no objectid-class specified yet has 0 primary key fields. Unable to use SingleFieldIdentity.
+org.datanucleus.metadata.InvalidMetaDataException: Class br.com.bufunfa.finance.conta.ContaImpl has application-identity and no objectid-class specified yet has 0 primary key fields. Unable to use SingleFieldIdentity.
+	at org.datanucleus.metadata.AbstractClassMetaData.determineObjectIdClass(AbstractClassMetaData.java:1032)
+	at org.datanucleus.metadata.ClassMetaData.populate(ClassMetaData.java:205)
+	at org.datanucleus.metadata.MetaDataManager$1.run(MetaDataManager.java:2322)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.datanucleus.metadata.MetaDataManager.populateAbstractClassMetaData(MetaDataManager.java:2316)
+	at org.datanucleus.metadata.MetaDataManager.populateFileMetaData(MetaDataManager.java:2153)
+	at org.datanucleus.metadata.MetaDataManager.initialiseFileMetaDataForUse(MetaDataManager.java:864)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:433)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+22:03:01,154 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed and no classes were enhanced. Consult the log for full details
+22:05:21,393 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+22:05:21,701 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+22:05:21,701 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+22:05:21,755 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+22:05:21,903 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+22:05:21,962 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+22:05:21,963 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+22:05:21,964 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" has no MetaData or annotations.
+22:05:21,965 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+22:05:21,966 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+22:05:21,967 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+22:05:21,976 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" has no MetaData or annotations.
+22:05:21,977 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" has no MetaData or annotations.
+22:05:21,978 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+22:05:21,979 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+22:05:21,979 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+22:05:22,071 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+22:05:22,071 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=227 ms, enhance=84 ms, total=311 ms. Consult the log for full details
+22:06:21,360 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+22:06:21,784 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+22:06:21,784 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+22:06:21,853 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+22:06:22,007 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+22:06:22,092 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+22:06:22,093 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+22:06:22,100 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" has no MetaData or annotations.
+22:06:22,101 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+22:06:22,102 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+22:06:22,102 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+22:06:22,109 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" has no MetaData or annotations.
+22:06:22,110 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" has no MetaData or annotations.
+22:06:22,111 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+22:06:22,111 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+22:06:22,112 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+22:06:22,116 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+22:06:22,117 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+22:06:22,126 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+22:06:22,144 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+22:06:22,144 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+22:06:22,154 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+22:06:22,272 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+22:06:22,272 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=308 ms, enhance=103 ms, total=411 ms. Consult the log for full details
+22:33:13,627 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+22:33:13,935 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+22:33:13,935 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+22:33:13,987 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+22:33:14,087 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+22:33:14,135 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+22:33:14,137 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+22:33:14,138 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" has no MetaData or annotations.
+22:33:14,139 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+22:33:14,140 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+22:33:14,140 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+22:33:14,145 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" has no MetaData or annotations.
+22:33:14,146 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" has no MetaData or annotations.
+22:33:14,153 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+22:33:14,153 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+22:33:14,154 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+22:33:14,156 (main) ERROR [DataNucleus.MetaData] - Class br.com.bufunfa.finance.conta.ContaImpl has application-identity and no objectid-class specified yet has 0 primary key fields. Unable to use SingleFieldIdentity.
+22:33:14,163 (main) ERROR [DataNucleus.Enhancer] - DataNucleus Enhancer completed with an error. Please review the enhancer log for full details. Some classes may have been enhanced but some caused errors
+Class br.com.bufunfa.finance.conta.ContaImpl has application-identity and no objectid-class specified yet has 0 primary key fields. Unable to use SingleFieldIdentity.
+org.datanucleus.metadata.InvalidMetaDataException: Class br.com.bufunfa.finance.conta.ContaImpl has application-identity and no objectid-class specified yet has 0 primary key fields. Unable to use SingleFieldIdentity.
+	at org.datanucleus.metadata.AbstractClassMetaData.determineObjectIdClass(AbstractClassMetaData.java:1032)
+	at org.datanucleus.metadata.ClassMetaData.populate(ClassMetaData.java:205)
+	at org.datanucleus.metadata.MetaDataManager$1.run(MetaDataManager.java:2322)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.datanucleus.metadata.MetaDataManager.populateAbstractClassMetaData(MetaDataManager.java:2316)
+	at org.datanucleus.metadata.MetaDataManager.populateFileMetaData(MetaDataManager.java:2153)
+	at org.datanucleus.metadata.MetaDataManager.initialiseFileMetaDataForUse(MetaDataManager.java:864)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:433)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+22:33:14,164 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed and no classes were enhanced. Consult the log for full details
+22:35:41,091 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+22:35:41,766 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+22:35:41,766 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+22:35:41,945 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+22:35:42,051 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" doesnt exist!
+22:35:42,066 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+22:35:42,081 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+22:35:42,095 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+22:35:42,096 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" has no MetaData or annotations.
+22:35:42,097 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+22:35:42,098 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+22:35:42,099 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+22:35:42,148 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" has no MetaData or annotations.
+22:35:42,150 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" has no MetaData or annotations.
+22:35:42,151 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+22:35:42,152 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+22:35:42,153 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+22:35:42,153 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+22:35:42,153 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+22:35:42,153 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" has no MetaData or annotations.
+22:35:42,153 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+22:35:42,153 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+22:35:42,153 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+22:35:42,153 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" has no MetaData or annotations.
+22:35:42,153 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" has no MetaData or annotations.
+22:35:42,153 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+22:35:42,153 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+22:35:42,165 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+22:35:42,217 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+22:35:42,219 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+22:35:42,220 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+22:35:42,259 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+22:35:42,260 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+22:35:42,261 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+22:35:42,270 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 0 classes. Timings : input=316 ms, enhance=0 ms, total=316 ms. Consult the log for full details
+22:35:42,273 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed and no classes were enhanced. Consult the log for full details
+22:35:43,067 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+22:35:43,568 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+22:35:43,568 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+22:35:43,721 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+22:35:43,955 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+22:35:44,075 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+22:35:44,076 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+22:35:44,077 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" has no MetaData or annotations.
+22:35:44,086 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+22:35:44,087 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+22:35:44,088 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+22:35:44,099 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" has no MetaData or annotations.
+22:35:44,100 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" has no MetaData or annotations.
+22:35:44,101 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+22:35:44,101 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+22:35:44,102 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+22:35:44,102 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+22:35:44,102 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+22:35:44,102 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" has no MetaData or annotations.
+22:35:44,102 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+22:35:44,102 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+22:35:44,103 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+22:35:44,103 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" has no MetaData or annotations.
+22:35:44,103 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" has no MetaData or annotations.
+22:35:44,103 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+22:35:44,103 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+22:35:44,103 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+22:35:44,106 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+22:35:44,107 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+22:35:44,115 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+22:35:44,126 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+22:35:44,127 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+22:35:44,128 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+22:35:44,263 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+22:35:44,263 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=406 ms, enhance=128 ms, total=534 ms. Consult the log for full details
+22:58:05,944 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+22:58:06,298 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+22:58:06,298 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+22:58:06,372 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+22:58:06,450 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" doesnt exist!
+22:58:06,450 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_Configurable.class" doesnt exist!
+22:58:06,451 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_Entity.class" doesnt exist!
+22:58:06,451 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_Finder.class" doesnt exist!
+22:58:06,451 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_JavaBean.class" doesnt exist!
+22:58:06,451 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_Serializable.class" doesnt exist!
+22:58:06,451 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_ToString.class" doesnt exist!
+22:58:06,451 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/wui/UIConta.class" doesnt exist!
+22:58:06,451 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/wui/UIConta_Roo_JavaBean.class" doesnt exist!
+22:58:06,451 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/wui/UIMain$Place.class" doesnt exist!
+22:58:06,452 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/wui/UIMain.class" doesnt exist!
+22:58:06,452 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/wui/UIMain_Roo_JavaBean.class" doesnt exist!
+22:58:06,452 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/test-classes/br/com/bufunfa/finance/conta/ContaImplDataOnDemand.class" doesnt exist!
+22:58:06,452 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/test-classes/br/com/bufunfa/finance/conta/ContaImplDataOnDemand_Roo_Configurable.class" doesnt exist!
+22:58:06,452 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/test-classes/br/com/bufunfa/finance/conta/ContaImplDataOnDemand_Roo_DataOnDemand.class" doesnt exist!
+22:58:06,452 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/test-classes/br/com/bufunfa/finance/conta/ContaImplIntegrationTest.class" doesnt exist!
+22:58:06,452 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/test-classes/br/com/bufunfa/finance/conta/ContaImplIntegrationTest_Roo_Configurable.class" doesnt exist!
+22:58:06,453 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/test-classes/br/com/bufunfa/finance/conta/ContaImplIntegrationTest_Roo_IntegrationTest.class" doesnt exist!
+22:58:06,454 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+22:58:06,454 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+22:58:06,455 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+22:58:06,455 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+22:58:06,456 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+22:58:06,456 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+22:58:06,456 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+22:58:06,457 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.wui.UIConta" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+22:58:06,465 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+22:58:06,466 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.wui.UIMain$Place" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+22:58:06,466 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.wui.UIMain" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+22:58:06,467 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+22:58:06,468 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 0 classes. Timings : input=86 ms, enhance=0 ms, total=86 ms. Consult the log for full details
+22:58:06,477 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed and no classes were enhanced. Consult the log for full details
+22:58:07,854 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+22:58:08,066 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+22:58:08,066 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+22:58:08,120 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+22:58:08,261 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+22:58:08,304 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+22:58:08,305 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+22:58:08,306 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" has no MetaData or annotations.
+22:58:08,307 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+22:58:08,308 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+22:58:08,308 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+22:58:08,318 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" has no MetaData or annotations.
+22:58:08,319 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" has no MetaData or annotations.
+22:58:08,320 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+22:58:08,320 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+22:58:08,321 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+22:58:08,321 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+22:58:08,321 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+22:58:08,321 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" has no MetaData or annotations.
+22:58:08,321 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+22:58:08,329 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+22:58:08,330 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+22:58:08,330 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" has no MetaData or annotations.
+22:58:08,330 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" has no MetaData or annotations.
+22:58:08,330 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+22:58:08,330 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+22:58:08,330 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+22:58:08,336 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+22:58:08,337 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+22:58:08,342 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+22:58:08,361 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+22:58:08,362 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+22:58:08,363 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+22:58:08,518 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+22:58:08,519 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=247 ms, enhance=138 ms, total=385 ms. Consult the log for full details
+23:03:23,358 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+23:03:24,040 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+23:03:24,040 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+23:03:24,215 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+23:03:24,386 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" doesnt exist!
+23:03:24,393 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_Configurable.class" doesnt exist!
+23:03:24,393 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_Entity.class" doesnt exist!
+23:03:24,394 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_Finder.class" doesnt exist!
+23:03:24,394 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_JavaBean.class" doesnt exist!
+23:03:24,394 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_Serializable.class" doesnt exist!
+23:03:24,394 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_ToString.class" doesnt exist!
+23:03:24,394 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/wui/UIConta.class" doesnt exist!
+23:03:24,394 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/wui/UIConta_Roo_JavaBean.class" doesnt exist!
+23:03:24,394 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/wui/UIMain$Place.class" doesnt exist!
+23:03:24,394 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/wui/UIMain.class" doesnt exist!
+23:03:24,396 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/wui/UIMain_Roo_JavaBean.class" doesnt exist!
+23:03:24,396 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/test-classes/br/com/bufunfa/finance/conta/ContaImplDataOnDemand.class" doesnt exist!
+23:03:24,397 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/test-classes/br/com/bufunfa/finance/conta/ContaImplDataOnDemand_Roo_Configurable.class" doesnt exist!
+23:03:24,397 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/test-classes/br/com/bufunfa/finance/conta/ContaImplDataOnDemand_Roo_DataOnDemand.class" doesnt exist!
+23:03:24,397 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/test-classes/br/com/bufunfa/finance/conta/ContaImplIntegrationTest.class" doesnt exist!
+23:03:24,397 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/test-classes/br/com/bufunfa/finance/conta/ContaImplIntegrationTest_Roo_Configurable.class" doesnt exist!
+23:03:24,397 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/test-classes/br/com/bufunfa/finance/conta/ContaImplIntegrationTest_Roo_IntegrationTest.class" doesnt exist!
+23:03:24,400 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+23:03:24,400 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+23:03:24,401 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+23:03:24,401 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+23:03:24,408 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+23:03:24,408 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+23:03:24,409 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+23:03:24,409 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.wui.UIConta" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+23:03:24,410 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+23:03:24,410 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.wui.UIMain$Place" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+23:03:24,410 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.wui.UIMain" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+23:03:24,411 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+23:03:24,411 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.index_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.index_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+23:03:24,413 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 0 classes. Timings : input=169 ms, enhance=0 ms, total=169 ms. Consult the log for full details
+23:03:24,413 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed and no classes were enhanced. Consult the log for full details
+23:03:28,492 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+23:03:29,171 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+23:03:29,171 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+23:03:29,353 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+23:03:29,868 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+23:03:30,087 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+23:03:30,088 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+23:03:30,090 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" has no MetaData or annotations.
+23:03:30,090 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+23:03:30,091 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+23:03:30,092 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+23:03:30,104 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" has no MetaData or annotations.
+23:03:30,110 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" has no MetaData or annotations.
+23:03:30,111 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+23:03:30,112 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+23:03:30,113 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+23:03:30,113 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+23:03:30,113 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+23:03:30,113 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" has no MetaData or annotations.
+23:03:30,113 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+23:03:30,113 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+23:03:30,113 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+23:03:30,113 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" has no MetaData or annotations.
+23:03:30,113 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" has no MetaData or annotations.
+23:03:30,113 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+23:03:30,113 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+23:03:30,113 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+23:03:30,127 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+23:03:30,128 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+23:03:30,129 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+23:03:30,160 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+23:03:30,161 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+23:03:30,162 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+23:03:30,163 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.index_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.index_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+23:03:30,384 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+23:03:30,384 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=805 ms, enhance=208 ms, total=1013 ms. Consult the log for full details
+23:04:14,981 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+23:04:15,625 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+23:04:15,625 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+23:04:15,762 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+23:04:16,300 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+23:04:16,503 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+23:04:16,504 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+23:04:16,505 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" has no MetaData or annotations.
+23:04:16,506 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+23:04:16,508 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+23:04:16,509 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+23:04:16,530 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" has no MetaData or annotations.
+23:04:16,531 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" has no MetaData or annotations.
+23:04:16,532 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+23:04:16,532 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+23:04:16,533 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+23:04:16,533 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+23:04:16,533 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+23:04:16,533 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" has no MetaData or annotations.
+23:04:16,566 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+23:04:16,566 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+23:04:16,566 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+23:04:16,566 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" has no MetaData or annotations.
+23:04:16,566 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" has no MetaData or annotations.
+23:04:16,566 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+23:04:16,566 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+23:04:16,566 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+23:04:16,570 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+23:04:16,571 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+23:04:16,572 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+23:04:16,626 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+23:04:16,627 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+23:04:16,628 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+23:04:16,642 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.index_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.index_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+23:04:16,933 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+23:04:16,939 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=898 ms, enhance=266 ms, total=1164 ms. Consult the log for full details
+23:15:02,349 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+23:15:10,841 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+23:15:12,237 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:08:52,413 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:08:53,080 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:08:53,281 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:08:53,281 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:08:53,562 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:08:53,734 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" doesnt exist!
+20:08:53,734 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_Configurable.class" doesnt exist!
+20:08:53,734 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_Entity.class" doesnt exist!
+20:08:53,734 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_Finder.class" doesnt exist!
+20:08:53,734 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_JavaBean.class" doesnt exist!
+20:08:53,734 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_Serializable.class" doesnt exist!
+20:08:53,734 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_ToString.class" doesnt exist!
+20:08:53,735 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/wui/UIConta.class" doesnt exist!
+20:08:53,735 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/wui/UIConta_Roo_JavaBean.class" doesnt exist!
+20:08:53,735 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/wui/UIMain$Place.class" doesnt exist!
+20:08:53,735 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/wui/UIMain.class" doesnt exist!
+20:08:53,735 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/wui/UIMain_Roo_JavaBean.class" doesnt exist!
+20:08:53,735 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter.class" doesnt exist!
+20:08:53,735 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/com/sun/faces/config/WebConfiguration$DisableUnicodeEscaping.class" doesnt exist!
+20:08:53,735 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/com/sun/faces/config/WebConfiguration$WebContextInitParameter.class" doesnt exist!
+20:08:53,735 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/com/sun/faces/config/WebConfiguration$WebEnvironmentEntry.class" doesnt exist!
+20:08:53,735 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/com/sun/faces/config/WebConfiguration.class" doesnt exist!
+20:08:53,735 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/test-classes/br/com/bufunfa/finance/conta/ContaImplDataOnDemand.class" doesnt exist!
+20:08:53,735 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/test-classes/br/com/bufunfa/finance/conta/ContaImplDataOnDemand_Roo_Configurable.class" doesnt exist!
+20:08:53,736 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/test-classes/br/com/bufunfa/finance/conta/ContaImplDataOnDemand_Roo_DataOnDemand.class" doesnt exist!
+20:08:53,736 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/test-classes/br/com/bufunfa/finance/conta/ContaImplIntegrationTest.class" doesnt exist!
+20:08:53,736 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/test-classes/br/com/bufunfa/finance/conta/ContaImplIntegrationTest_Roo_Configurable.class" doesnt exist!
+20:08:53,736 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/test-classes/br/com/bufunfa/finance/conta/ContaImplIntegrationTest_Roo_IntegrationTest.class" doesnt exist!
+20:08:53,737 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+20:08:53,749 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+20:08:53,750 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+20:08:53,750 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+20:08:53,751 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+20:08:53,751 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+20:08:53,752 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+20:08:53,752 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.wui.UIConta" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+20:08:53,762 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+20:08:53,762 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.wui.UIMain$Place" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+20:08:53,763 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.wui.UIMain" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+20:08:53,763 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+20:08:53,838 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$BooleanWebContextInitParameter" has no MetaData or annotations.
+20:08:53,867 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$DisableUnicodeEscaping" has no MetaData or annotations.
+20:08:53,868 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebContextInitParameter" has no MetaData or annotations.
+20:08:53,869 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebEnvironmentEntry" has no MetaData or annotations.
+20:08:53,885 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:08:53,885 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:08:53,888 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration" has no MetaData or annotations.
+20:08:53,889 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 0 classes. Timings : input=319 ms, enhance=0 ms, total=319 ms. Consult the log for full details
+20:08:53,889 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed and no classes were enhanced. Consult the log for full details
+20:08:54,167 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:08:54,343 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" doesnt exist!
+20:08:54,343 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_Configurable.class" doesnt exist!
+20:08:54,343 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_Entity.class" doesnt exist!
+20:08:54,343 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_Finder.class" doesnt exist!
+20:08:54,343 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_JavaBean.class" doesnt exist!
+20:08:54,344 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_Serializable.class" doesnt exist!
+20:08:54,344 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_ToString.class" doesnt exist!
+20:08:54,344 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/wui/UIConta.class" doesnt exist!
+20:08:54,344 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/wui/UIConta_Roo_JavaBean.class" doesnt exist!
+20:08:54,344 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/wui/UIMain$Place.class" doesnt exist!
+20:08:54,344 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/wui/UIMain.class" doesnt exist!
+20:08:54,344 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/br/com/bufunfa/finance/wui/UIMain_Roo_JavaBean.class" doesnt exist!
+20:08:54,344 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter.class" doesnt exist!
+20:08:54,345 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/com/sun/faces/config/WebConfiguration$DisableUnicodeEscaping.class" doesnt exist!
+20:08:54,345 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/com/sun/faces/config/WebConfiguration$WebContextInitParameter.class" doesnt exist!
+20:08:54,345 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/com/sun/faces/config/WebConfiguration$WebEnvironmentEntry.class" doesnt exist!
+20:08:54,345 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/classes/com/sun/faces/config/WebConfiguration.class" doesnt exist!
+20:08:54,349 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/test-classes/br/com/bufunfa/finance/conta/ContaImplDataOnDemand.class" doesnt exist!
+20:08:54,349 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/test-classes/br/com/bufunfa/finance/conta/ContaImplDataOnDemand_Roo_Configurable.class" doesnt exist!
+20:08:54,350 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/test-classes/br/com/bufunfa/finance/conta/ContaImplDataOnDemand_Roo_DataOnDemand.class" doesnt exist!
+20:08:54,350 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/test-classes/br/com/bufunfa/finance/conta/ContaImplIntegrationTest.class" doesnt exist!
+20:08:54,350 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/test-classes/br/com/bufunfa/finance/conta/ContaImplIntegrationTest_Roo_Configurable.class" doesnt exist!
+20:08:54,350 (main) ERROR [DataNucleus.Enhancer] - Input file "/home/camilo/Ubuntu One/scm/Finance/target/test-classes/br/com/bufunfa/finance/conta/ContaImplIntegrationTest_Roo_IntegrationTest.class" doesnt exist!
+20:08:54,357 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+20:08:54,358 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+20:08:54,358 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+20:08:54,359 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+20:08:54,359 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+20:08:54,360 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+20:08:54,360 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+20:08:54,360 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.wui.UIConta" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+20:08:54,361 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+20:08:54,361 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.wui.UIMain$Place" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+20:08:54,386 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.wui.UIMain" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+20:08:54,386 (main) ERROR [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+20:08:54,442 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$BooleanWebContextInitParameter" has no MetaData or annotations.
+20:08:54,488 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$DisableUnicodeEscaping" has no MetaData or annotations.
+20:08:54,489 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebContextInitParameter" has no MetaData or annotations.
+20:08:54,490 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebEnvironmentEntry" has no MetaData or annotations.
+20:08:54,491 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration" has no MetaData or annotations.
+20:08:54,492 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 0 classes. Timings : input=300 ms, enhance=0 ms, total=300 ms. Consult the log for full details
+20:08:54,505 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed and no classes were enhanced. Consult the log for full details
+20:09:01,053 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:09:01,734 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:09:01,734 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:09:01,894 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:09:02,209 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+20:09:02,259 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:09:02,260 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:09:02,261 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" has no MetaData or annotations.
+20:09:02,262 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:09:02,263 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:09:02,264 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:09:02,268 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" has no MetaData or annotations.
+20:09:02,269 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" has no MetaData or annotations.
+20:09:02,270 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+20:09:02,271 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+20:09:02,272 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+20:09:02,276 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$BooleanWebContextInitParameter" has no MetaData or annotations.
+20:09:02,277 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$DisableUnicodeEscaping" has no MetaData or annotations.
+20:09:02,278 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebContextInitParameter" has no MetaData or annotations.
+20:09:02,279 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebEnvironmentEntry" has no MetaData or annotations.
+20:09:02,280 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration" has no MetaData or annotations.
+20:09:02,280 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+20:09:02,280 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+20:09:02,280 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" has no MetaData or annotations.
+20:09:02,280 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+20:09:02,281 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+20:09:02,281 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+20:09:02,281 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" has no MetaData or annotations.
+20:09:02,281 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" has no MetaData or annotations.
+20:09:02,281 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+20:09:02,281 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+20:09:02,281 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+20:09:02,281 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$BooleanWebContextInitParameter" has no MetaData or annotations.
+20:09:02,281 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$DisableUnicodeEscaping" has no MetaData or annotations.
+20:09:02,281 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebContextInitParameter" has no MetaData or annotations.
+20:09:02,281 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebEnvironmentEntry" has no MetaData or annotations.
+20:09:02,281 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration" has no MetaData or annotations.
+20:09:02,285 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+20:09:02,286 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:09:02,288 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:09:02,298 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+20:09:02,299 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:09:02,300 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:09:02,674 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+20:09:02,675 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=428 ms, enhance=349 ms, total=777 ms. Consult the log for full details
+10:40:09,375 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+10:40:09,791 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+10:40:09,791 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+10:40:09,887 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+10:40:10,193 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+10:40:10,282 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+10:40:10,283 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+10:40:10,284 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" has no MetaData or annotations.
+10:40:10,285 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+10:40:10,285 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+10:40:10,289 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+10:40:10,297 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" has no MetaData or annotations.
+10:40:10,298 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" has no MetaData or annotations.
+10:40:10,299 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+10:40:10,299 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+10:40:10,300 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+10:40:10,307 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$BooleanWebContextInitParameter" has no MetaData or annotations.
+10:40:10,308 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$DisableUnicodeEscaping" has no MetaData or annotations.
+10:40:10,309 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebContextInitParameter" has no MetaData or annotations.
+10:40:10,310 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebEnvironmentEntry" has no MetaData or annotations.
+10:40:10,310 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration" has no MetaData or annotations.
+10:40:10,310 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+10:40:10,311 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+10:40:10,311 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" has no MetaData or annotations.
+10:40:10,311 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+10:40:10,311 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+10:40:10,311 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+10:40:10,311 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" has no MetaData or annotations.
+10:40:10,311 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" has no MetaData or annotations.
+10:40:10,311 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+10:40:10,311 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+10:40:10,311 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+10:40:10,311 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$BooleanWebContextInitParameter" has no MetaData or annotations.
+10:40:10,311 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$DisableUnicodeEscaping" has no MetaData or annotations.
+10:40:10,311 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebContextInitParameter" has no MetaData or annotations.
+10:40:10,311 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebEnvironmentEntry" has no MetaData or annotations.
+10:40:10,311 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration" has no MetaData or annotations.
+10:40:10,321 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+10:40:10,321 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+10:40:10,322 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+10:40:10,333 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+10:40:10,334 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+10:40:10,335 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+10:40:10,335 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.index_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.index_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+10:40:10,524 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+10:40:10,525 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=453 ms, enhance=181 ms, total=634 ms. Consult the log for full details
+10:40:13,760 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+10:40:14,294 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+10:40:14,294 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+10:40:14,487 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+10:40:14,865 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+10:40:15,060 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+10:40:15,061 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+10:40:15,062 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" has no MetaData or annotations.
+10:40:15,063 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+10:40:15,064 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+10:40:15,065 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+10:40:15,093 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" has no MetaData or annotations.
+10:40:15,106 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" has no MetaData or annotations.
+10:40:15,107 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+10:40:15,107 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+10:40:15,108 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+10:40:15,121 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$BooleanWebContextInitParameter" has no MetaData or annotations.
+10:40:15,126 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$DisableUnicodeEscaping" has no MetaData or annotations.
+10:40:15,127 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebContextInitParameter" has no MetaData or annotations.
+10:40:15,128 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebEnvironmentEntry" has no MetaData or annotations.
+10:40:15,129 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration" has no MetaData or annotations.
+10:40:15,129 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+10:40:15,129 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+10:40:15,129 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" has no MetaData or annotations.
+10:40:15,129 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+10:40:15,129 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+10:40:15,129 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+10:40:15,129 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" has no MetaData or annotations.
+10:40:15,129 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" has no MetaData or annotations.
+10:40:15,129 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+10:40:15,129 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+10:40:15,129 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+10:40:15,129 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$BooleanWebContextInitParameter" has no MetaData or annotations.
+10:40:15,129 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$DisableUnicodeEscaping" has no MetaData or annotations.
+10:40:15,129 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebContextInitParameter" has no MetaData or annotations.
+10:40:15,129 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebEnvironmentEntry" has no MetaData or annotations.
+10:40:15,129 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration" has no MetaData or annotations.
+10:40:15,145 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+10:40:15,161 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+10:40:15,162 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+10:40:15,203 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+10:40:15,204 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+10:40:15,205 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+10:40:15,218 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.index_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.index_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+10:40:15,471 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+10:40:15,471 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=756 ms, enhance=219 ms, total=975 ms. Consult the log for full details
+10:40:41,813 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+10:40:42,235 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+10:40:42,235 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+10:40:42,387 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+10:40:42,757 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl" has been specified with JPA annotations so using those.
+10:40:42,923 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+10:40:42,931 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+10:40:42,932 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" has no MetaData or annotations.
+10:40:42,933 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+10:40:42,938 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+10:40:42,939 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+10:40:42,951 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" has no MetaData or annotations.
+10:40:42,952 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" has no MetaData or annotations.
+10:40:42,953 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+10:40:42,953 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+10:40:42,954 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+10:40:42,957 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$BooleanWebContextInitParameter" has no MetaData or annotations.
+10:40:42,980 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$DisableUnicodeEscaping" has no MetaData or annotations.
+10:40:42,981 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebContextInitParameter" has no MetaData or annotations.
+10:40:42,990 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebEnvironmentEntry" has no MetaData or annotations.
+10:40:42,991 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration" has no MetaData or annotations.
+10:40:42,991 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable" has no MetaData or annotations.
+10:40:42,991 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity" has no MetaData or annotations.
+10:40:42,991 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder" has no MetaData or annotations.
+10:40:42,991 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean" has no MetaData or annotations.
+10:40:42,991 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable" has no MetaData or annotations.
+10:40:42,991 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString" has no MetaData or annotations.
+10:40:42,991 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta" has no MetaData or annotations.
+10:40:42,991 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean" has no MetaData or annotations.
+10:40:42,991 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+10:40:42,991 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+10:40:42,992 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+10:40:42,992 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$BooleanWebContextInitParameter" has no MetaData or annotations.
+10:40:42,992 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$DisableUnicodeEscaping" has no MetaData or annotations.
+10:40:42,992 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebContextInitParameter" has no MetaData or annotations.
+10:40:42,992 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebEnvironmentEntry" has no MetaData or annotations.
+10:40:42,992 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration" has no MetaData or annotations.
+10:40:43,000 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand" has no MetaData or annotations.
+10:40:43,001 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+10:40:43,004 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+10:40:43,029 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest" has no MetaData or annotations.
+10:40:43,029 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+10:40:43,031 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+10:40:43,032 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.index_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.index_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:250)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:415)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:379)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+
+10:40:43,273 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Ubuntu%20One/scm/Finance/target/classes/br/com/bufunfa/finance/conta/ContaImpl.class" with enhanced definition
+10:40:43,274 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=660 ms, enhance=222 ms, total=882 ms. Consult the log for full details
