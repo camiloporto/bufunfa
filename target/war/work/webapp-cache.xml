@@ -28,12 +28,14 @@
           <string>Transacoes.xhtml</string>
           <string>Conta.xhtml</string>
           <string>WEB-INF/classes/br/com/bufunfa/finance/conta/ContaImpl.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/IContaService.class</string>
           <string>WEB-INF/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_Serializable.class</string>
           <string>WEB-INF/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_Entity.class</string>
           <string>WEB-INF/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_JavaBean.class</string>
           <string>WEB-INF/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_Configurable.class</string>
           <string>WEB-INF/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_Finder.class</string>
           <string>WEB-INF/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_ToString.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/ContaServiceImpl.class</string>
           <string>WEB-INF/classes/br/com/bufunfa/finance/wui/UIMain.class</string>
           <string>WEB-INF/classes/br/com/bufunfa/finance/wui/UIConta_Roo_JavaBean.class</string>
           <string>WEB-INF/classes/br/com/bufunfa/finance/wui/UIMain$Place.class</string>

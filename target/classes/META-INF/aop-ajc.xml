@@ -2,8 +2,8 @@
 <aspects>
 <aspect name="br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity"/>
 <aspect name="br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable"/>
-<aspect name="br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean"/>
 <aspect name="br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString"/>
+<aspect name="br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean"/>
 <aspect name="br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable"/>
 <aspect name="br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder"/>
 <aspect name="br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean"/>

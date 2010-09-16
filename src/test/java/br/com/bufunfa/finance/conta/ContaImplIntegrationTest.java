@@ -5,13 +5,12 @@ import java.util.Set;
 
 import junit.framework.Assert;
 
-import org.springframework.roo.addon.test.RooIntegrationTest;
-import br.com.bufunfa.finance.conta.ContaImpl;
 import org.junit.Test;
+import org.springframework.roo.addon.test.RooIntegrationTest;
 
 @RooIntegrationTest(entity = ContaImpl.class)
 public class ContaImplIntegrationTest {
-
+	
     @Test
     public void testBasicSave() {
     	ContaImpl c = new ContaImpl();

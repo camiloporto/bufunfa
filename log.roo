@@ -53,3 +53,7 @@ quit
 // Spring Roo 1.1.0.M1 [rev 3a0b8a3] log opened at 2010-08-31 21:33:18
 // Spring Roo 1.1.0.M1 [rev 3a0b8a3] log opened at 2010-09-06 22:38:54
 // Spring Roo 1.1.0.M1 [rev 3a0b8a3] log opened at 2010-09-10 20:08:52
+// Spring Roo 1.1.0.M1 [rev 3a0b8a3] log opened at 2010-09-11 14:24:13
+// Spring Roo 1.1.0.M1 [rev 3a0b8a3] log opened at 2010-09-11 20:11:43
+finder list --class ~.conta.ContaImpl
+finder add --finderName findContaImplsByIdFatherIsNull --class ~.conta.ContaImpl

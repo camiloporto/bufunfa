@@ -7,20 +7,12 @@
 
 	<body>
 		<h:form>
-			<p:layout style="width:600px;height:500px; border:0px">
-				<p:layoutUnit position="left" width="300" height="300">
-					<h1>Receitas</h1>
-					<p:tree value="#{Conta.receitaRoot}" var="node">
-						<p:treeNode>
-							<h:outputText value="#{node}" />
-						</p:treeNode>
-					</p:tree>
-				</p:layoutUnit>
-				
-				<p:layoutUnit position="center">
-					<h1>Despesas</h1>
-				</p:layoutUnit>
-			</p:layout>
+			<h1>Contas</h1>
+			<p:tree value="#{Conta.root}" var="node" dynamic="true">
+				<p:treeNode>
+					<h:outputText value="#{node}" />
+				</p:treeNode>
+			</p:tree>
 		</h:form>
 	
 	</body>

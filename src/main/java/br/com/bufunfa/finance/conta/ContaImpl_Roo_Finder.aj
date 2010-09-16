@@ -14,4 +14,10 @@ privileged aspect ContaImpl_Roo_Finder {
         return q;
     }
     
+    public static Query ContaImpl.findContaImplsByIdFatherIsNull() {
+        EntityManager em = ContaImpl.entityManager();
+        Query q = em.createQuery("SELECT ContaImpl FROM ContaImpl AS contaimpl WHERE contaimpl.idFather IS NULL");
+        return q;
+    }
+    
 }

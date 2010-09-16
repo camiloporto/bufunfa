@@ -5,23 +5,9 @@
   
  	<application>
 		<view-handler>com.sun.facelets.FaceletViewHandler</view-handler>
-		<!-- 
+		 
 		<el-resolver>org.springframework.web.jsf.el.SpringBeanFacesELResolver</el-resolver>
-		 -->
+		 
 	</application>
-	
-	  
-	<managed-bean>
-		<managed-bean-name>Conta</managed-bean-name>
-		<managed-bean-class>br.com.bufunfa.finance.wui.UIConta</managed-bean-class>
-		<managed-bean-scope>session</managed-bean-scope>
-	</managed-bean>
-	
-	
-	<managed-bean>
-		<managed-bean-name>Main</managed-bean-name>
-		<managed-bean-class>br.com.bufunfa.finance.wui.UIMain</managed-bean-class>
-		<managed-bean-scope>session</managed-bean-scope>
-	</managed-bean>
 	
  </faces-config>

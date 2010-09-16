@@ -9,8 +9,10 @@
 /home/camilo/Ubuntu One/scm/Finance/target/classes:/home/camilo/Ubuntu One/mavenRepository/org/springframework/spring-aspects/3.0.2.RELEASE/spring-aspects-3.0.2.RELEASE.jar
 -d
 /home/camilo/Ubuntu One/scm/Finance/target/test-classes
+/home/camilo/Ubuntu One/scm/Finance/src/test/java/br/com/bufunfa/finance/wui/UIContaTest.java
 /home/camilo/Ubuntu One/scm/Finance/src/test/java/br/com/bufunfa/finance/conta/ContaImplDataOnDemand.java
 /home/camilo/Ubuntu One/scm/Finance/src/test/java/br/com/bufunfa/finance/conta/ContaImplIntegrationTest_Roo_IntegrationTest.aj
+/home/camilo/Ubuntu One/scm/Finance/src/test/java/br/com/bufunfa/finance/conta/ContaServiceIntegrationTest.java
 /home/camilo/Ubuntu One/scm/Finance/src/test/java/br/com/bufunfa/finance/conta/ContaImplDataOnDemand_Roo_Configurable.aj
 /home/camilo/Ubuntu One/scm/Finance/src/test/java/br/com/bufunfa/finance/conta/ContaImplIntegrationTest.java
 /home/camilo/Ubuntu One/scm/Finance/src/test/java/br/com/bufunfa/finance/conta/ContaImplIntegrationTest_Roo_Configurable.aj
