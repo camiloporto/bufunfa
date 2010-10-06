@@ -4,6 +4,7 @@
 package br.com.bufunfa.finance.conta;
 
 import java.io.Serializable;
+import java.util.List;
 import java.util.Set;
 
 import org.springframework.stereotype.Service;
@@ -27,14 +28,31 @@ public class ContaServiceImpl implements Serializable, IContaService {
 	public Set<ContaImpl> getRootContas() {
 		return ContaImpl.getRoots();
 	}
-	
-	public void addConta(Long id, String nome) {
+	/**
+	 * Adiciona uma conta na hierarquia de conta
+	 */
+	public void addConta(ContaServiceParams params) {
+		//FIXME Efetuar validacao
 		
-		ContaImpl c = new ContaImpl();
-		c.setId(id);
-		c.setNome(nome);
-		System.out.println("ContaServiceImpl.addConta() adding " + c);
-		c.persist();
+		if(params.getNomePai() == null) {//Inserir conta Raiz
+			ContaImpl newConta = new ContaImpl();
+			newConta.setNome(params.getNome());
+			newConta.setDescricao(params.getDescricao());
+			newConta.persist();
+			return;
+		} else {//inserir conta abaixo de outra conta (pai)
+			//FIXME fazer com que nome do Pai e da conta seja unico
+			List<ContaImpl> result = ContaImpl.findContaImplsByNome(params.getNomePai()).getResultList();
+			if(!result.isEmpty()) {
+				ContaImpl father = (ContaImpl) result.get(0);
+				ContaImpl newConta = new ContaImpl();
+				newConta.setNome(params.getNome());
+				newConta.setDescricao(params.getDescricao());
+				
+				father.addChild(newConta);
+			}
+			
+		}
 	}
 
 }

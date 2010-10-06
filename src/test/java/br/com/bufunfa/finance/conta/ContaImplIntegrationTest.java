@@ -7,8 +7,10 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 import org.springframework.roo.addon.test.RooIntegrationTest;
+import org.springframework.test.context.ContextConfiguration;
 
 @RooIntegrationTest(entity = ContaImpl.class)
+@ContextConfiguration(locations = "classpath:/META-INF/spring/applicationContext-test.xml")
 public class ContaImplIntegrationTest {
 	
     @Test
@@ -74,5 +76,16 @@ public class ContaImplIntegrationTest {
     	ContaImpl child2 = childrenIt.next();
     	Assert.assertNotNull(child2.getId());
     	Assert.assertEquals(c.getId(), child2.getIdFather());
+    }
+    
+    @Test
+    public void testGetContaByNome() {
+    	ContaImpl c = new ContaImpl();
+    	c.setNome("Receitas");
+    	c.persist();
+    	
+    	ContaImpl retrieved = (ContaImpl) ContaImpl.findContaImplsByNome("Receitas").getResultList().get(0);
+    	Assert.assertNotNull(retrieved);
+    	Assert.assertEquals("Receitas", retrieved.getNome());
     }
 }

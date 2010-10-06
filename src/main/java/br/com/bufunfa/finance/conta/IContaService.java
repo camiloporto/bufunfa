@@ -21,6 +21,11 @@ public interface IContaService {
 	 */
 	public Set<ContaImpl> getRootContas();
 	
-	public void addConta(Long id, String nome);
+	/**
+	 * Adiciona uma nova conta na hierarquia
+	 * de contas
+	 * @param params
+	 */
+	public void addConta(ContaServiceParams params);
 
 }
