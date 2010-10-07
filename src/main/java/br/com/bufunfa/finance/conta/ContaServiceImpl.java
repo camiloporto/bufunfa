@@ -25,8 +25,8 @@ public class ContaServiceImpl implements Serializable, IContaService {
 	 * @see br.com.bufunfa.finance.conta.IContaService#getRootContas()
 	 */
 	@Override
-	public Set<ContaImpl> getRootContas() {
-		return ContaImpl.getRoots();
+	public Set<Conta> getRootContas() {
+		return Conta.getRoots();
 	}
 	/**
 	 * Adiciona uma conta na hierarquia de conta
@@ -35,17 +35,17 @@ public class ContaServiceImpl implements Serializable, IContaService {
 		//FIXME Efetuar validacao
 		
 		if(params.getNomePai() == null) {//Inserir conta Raiz
-			ContaImpl newConta = new ContaImpl();
+			Conta newConta = new Conta();
 			newConta.setNome(params.getNome());
 			newConta.setDescricao(params.getDescricao());
 			newConta.persist();
 			return;
 		} else {//inserir conta abaixo de outra conta (pai)
 			//FIXME fazer com que nome do Pai e da conta seja unico
-			List<ContaImpl> result = ContaImpl.findContaImplsByNome(params.getNomePai()).getResultList();
+			List<Conta> result = Conta.findContasByNome(params.getNomePai()).getResultList();
 			if(!result.isEmpty()) {
-				ContaImpl father = (ContaImpl) result.get(0);
-				ContaImpl newConta = new ContaImpl();
+				Conta father = (Conta) result.get(0);
+				Conta newConta = new Conta();
 				newConta.setNome(params.getNome());
 				newConta.setDescricao(params.getDescricao());
 				
@@ -54,5 +54,7 @@ public class ContaServiceImpl implements Serializable, IContaService {
 			
 		}
 	}
+	
+	//TODO Adicionar metodos para inserir lancamentos e efetuar transacoes (partida duplas)
 
 }

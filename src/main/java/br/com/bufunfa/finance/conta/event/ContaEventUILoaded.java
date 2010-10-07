@@ -8,7 +8,7 @@ import java.util.Set;
 
 import org.springframework.roo.addon.javabean.RooJavaBean;
 
-import br.com.bufunfa.finance.conta.ContaImpl;
+import br.com.bufunfa.finance.conta.Conta;
 
 /**
  * Evento gerado quando a tela de conta
@@ -29,10 +29,10 @@ public class ContaEventUILoaded extends ContaEvent {
 	 */
 	private static final long serialVersionUID = 1614736758429250821L;
 	
-	private Set<ContaImpl> rootContas = new HashSet<ContaImpl>();
+	private Set<Conta> rootContas = new HashSet<Conta>();
 
 	public ContaEventUILoaded(Object source, String nomeContaPai,
-			String nomeConta, String descricaoConta, Set<ContaImpl> rootContas) {
+			String nomeConta, String descricaoConta, Set<Conta> rootContas) {
 		super(source, EventType.UILoaded, nomeConta, descricaoConta, nomeContaPai);
 		if(rootContas != null) {
 			this.rootContas = rootContas;

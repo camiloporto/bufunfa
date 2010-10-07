@@ -10,7 +10,6 @@
           <string>images/contas.png</string>
           <string>images/transacoes.png</string>
           <string>css/finance.css</string>
-          <string>Template.xhtml.u1conflict</string>
           <string>index.jsp</string>
           <string>WEB-INF/web.xml</string>
           <string>WEB-INF/faces-config.xml</string>
@@ -27,19 +26,41 @@
           <string>WEB-INF/classes/standard.properties</string>
           <string>Transacoes.xhtml</string>
           <string>Conta.xhtml</string>
-          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/ContaImpl.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/Conta_Roo_Serializable.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/ContaServiceParams.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/ContaPresenter.class</string>
           <string>WEB-INF/classes/br/com/bufunfa/finance/conta/IContaService.class</string>
-          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_Serializable.class</string>
-          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_Entity.class</string>
-          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_JavaBean.class</string>
-          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_Configurable.class</string>
-          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_Finder.class</string>
-          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/ContaImpl_Roo_ToString.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/Lancamento_Roo_JavaBean.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/ContaPresenterListener.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/Lancamento_Roo_ToString.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/Conta_Roo_Finder.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/Lancamento_Roo_Entity.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/Lancamento_Roo_Configurable.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/Lancamento_Roo_Serializable.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/ContaServiceParams_Roo_JavaBean.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/ContaServiceParams_Roo_ToString.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/event/ContaEvent_Roo_ToString.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/event/ContaEventUILoaded.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/event/ContaEvent_Roo_JavaBean.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/event/ContaEvent$EventType.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/event/ContaEventUILoaded_Roo_JavaBean.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/event/ContaEvent.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/event/ContaEventCallback.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/event/ContaEventCallback_Roo_JavaBean.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/Lancamento.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/Conta_Roo_JavaBean.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/Conta.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/Conta_Roo_Entity.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/Conta_Roo_Configurable.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/ContaServiceParams_Roo_Serializable.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/conta/Conta_Roo_ToString.class</string>
           <string>WEB-INF/classes/br/com/bufunfa/finance/conta/ContaServiceImpl.class</string>
           <string>WEB-INF/classes/br/com/bufunfa/finance/wui/UIMain.class</string>
-          <string>WEB-INF/classes/br/com/bufunfa/finance/wui/UIConta_Roo_JavaBean.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/wui/conta/UIConta_Roo_JavaBean.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/wui/conta/UIConta_Roo_Serializable.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/wui/conta/UiContaListener.class</string>
+          <string>WEB-INF/classes/br/com/bufunfa/finance/wui/conta/UIConta.class</string>
           <string>WEB-INF/classes/br/com/bufunfa/finance/wui/UIMain$Place.class</string>
-          <string>WEB-INF/classes/br/com/bufunfa/finance/wui/UIConta.class</string>
           <string>WEB-INF/classes/br/com/bufunfa/finance/wui/UIMain_Roo_JavaBean.class</string>
           <string>WEB-INF/classes/log4j.properties</string>
           <string>WEB-INF/classes/META-INF/persistence.xml</string>
@@ -75,12 +96,10 @@
           <string>WEB-INF/lib/spring-tx-3.0.2.RELEASE.jar</string>
           <string>WEB-INF/lib/persistence-api-1.0.jar</string>
           <string>WEB-INF/lib/datanucleus-core-1.1.6.jar</string>
-          <string>WEB-INF/lib/datanucleus-jpa-1.1.5.jar</string>
-          <string>WEB-INF/lib/geronimo-jpa_3.0_spec-1.1.1.jar</string>
           <string>WEB-INF/lib/datanucleus-rdbms-1.1.6.jar</string>
           <string>WEB-INF/lib/transaction-api-1.1.jar</string>
           <string>WEB-INF/lib/datanucleus-enhancer-1.1.4.jar</string>
-          <string>WEB-INF/lib/asm-3.2.jar</string>
+          <string>WEB-INF/lib/asm-3.3.jar</string>
           <string>WEB-INF/lib/jdo2-api-2.3-eb.jar</string>
           <string>WEB-INF/lib/hibernate-validator-4.0.2.GA.jar</string>
           <string>WEB-INF/lib/validation-api-1.0.0.GA.jar</string>
@@ -418,11 +437,10 @@
         <artifactId>datanucleus-jpa</artifactId>
         <version>1.1.5</version>
         <type>jar</type>
-        <scope>compile</scope>
+        <scope>test</scope>
         <exclusions/>
         <optional>false</optional>
       </dependency>
-      <targetFileName>datanucleus-jpa-1.1.5.jar</targetFileName>
     </org.apache.maven.plugin.war.util.DependencyInfo>
     <org.apache.maven.plugin.war.util.DependencyInfo>
       <dependency>

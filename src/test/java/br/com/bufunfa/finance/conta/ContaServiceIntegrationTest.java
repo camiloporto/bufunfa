@@ -31,22 +31,22 @@ public class ContaServiceIntegrationTest {
 	
 //	@Before
 	public void prepare() {
-		ContaImpl c = new ContaImpl();
+		Conta c = new Conta();
     	c.setId(1L);
     	c.setNome("Receitas");
     	c.persist();
     	
-    	ContaImpl c2 = new ContaImpl();
+    	Conta c2 = new Conta();
     	c2.setId(2L);
     	c2.setNome("Despesas");
     	c2.persist();
     	
-    	ContaImpl c3 = new ContaImpl();
+    	Conta c3 = new Conta();
     	c3.setId(3L);
     	c3.setNome("Ativo");
     	c3.persist();
     	
-    	ContaImpl c4 = new ContaImpl();
+    	Conta c4 = new Conta();
     	c4.setId(4L);
     	c4.setNome("Passivo");
     	c4.persist();
@@ -57,9 +57,9 @@ public class ContaServiceIntegrationTest {
 	public void testGetRootContas() {
 		prepare();
 		Assert.assertNotNull(contaService);
-		Set<ContaImpl> roots = contaService.getRootContas();
+		Set<Conta> roots = contaService.getRootContas();
 		Assert.assertNotNull(roots);
-		for (ContaImpl contaImpl : roots) {
+		for (Conta contaImpl : roots) {
 			Assert.assertNull(contaImpl.getIdFather());
 			System.out
 					.println("ContaServiceIntegrationTest.testGetRootContas() " + contaImpl);

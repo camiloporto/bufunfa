@@ -1,9 +1,13 @@
 <aspectj>
 <aspects>
-<aspect name="br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_DataOnDemand"/>
-<aspect name="br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_IntegrationTest"/>
-<aspect name="br.com.bufunfa.finance.conta.ContaImplIntegrationTest_Roo_Configurable"/>
-<aspect name="br.com.bufunfa.finance.conta.ContaImplDataOnDemand_Roo_Configurable"/>
+<aspect name="br.com.bufunfa.finance.conta.ContaDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="br.com.bufunfa.finance.conta.ContaIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="br.com.bufunfa.finance.conta.LancamentoDataOnDemand_Roo_Configurable"/>
+<aspect name="br.com.bufunfa.finance.conta.LancamentoDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="br.com.bufunfa.finance.conta.LancamentoIntegrationTest_Roo_Configurable"/>
+<aspect name="br.com.bufunfa.finance.conta.ContaDataOnDemand_Roo_Configurable"/>
+<aspect name="br.com.bufunfa.finance.conta.LancamentoIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="br.com.bufunfa.finance.conta.ContaIntegrationTest_Roo_Configurable"/>
 </aspects>
 </aspectj>
 

@@ -9,18 +9,18 @@ import org.junit.Test;
 import org.springframework.roo.addon.test.RooIntegrationTest;
 import org.springframework.test.context.ContextConfiguration;
 
-@RooIntegrationTest(entity = ContaImpl.class)
+@RooIntegrationTest(entity = Conta.class)
 @ContextConfiguration(locations = "classpath:/META-INF/spring/applicationContext-test.xml")
-public class ContaImplIntegrationTest {
+public class ContaIntegrationTest {
 	
     @Test
     public void testBasicSave() {
-    	ContaImpl c = new ContaImpl();
+    	Conta c = new Conta();
     	c.setId(1L);
     	c.setNome("Receitas");
     	c.persist();
     	
-    	ContaImpl retrieved = ContaImpl.findContaImpl(1L);
+    	Conta retrieved = Conta.findConta(1L);
     	Assert.assertNotNull(retrieved);
     	Assert.assertEquals("Receitas", retrieved.getNome());
     	
@@ -28,20 +28,20 @@ public class ContaImplIntegrationTest {
     
     @Test
     public void testBasicAddChild() {
-    	ContaImpl c = new ContaImpl();
+    	Conta c = new Conta();
     	c.setNome("Receitas");
     	c.persist();
     	
-    	ContaImpl c2 = new ContaImpl();
+    	Conta c2 = new Conta();
     	c2.setNome("Salario");
     	
     	c.addChild(c2);
     	
-    	ContaImpl retrieved = ContaImpl.findContaImpl(c2.getId());
+    	Conta retrieved = Conta.findConta(c2.getId());
     	Assert.assertNotNull(retrieved);
     	Assert.assertEquals("Salario", retrieved.getNome());
     	
-    	ContaImpl father = ContaImpl.findContaImpl(retrieved.getIdFather());
+    	Conta father = Conta.findConta(retrieved.getIdFather());
     	Assert.assertNotNull(father);
     	Assert.assertEquals("Receitas", father.getNome());
     	
@@ -49,42 +49,42 @@ public class ContaImplIntegrationTest {
     
     @Test
     public void testBasicGetChildren() {
-    	ContaImpl c = new ContaImpl();
+    	Conta c = new Conta();
     	c.setNome("Receitas");
     	c.persist();
     	
-    	ContaImpl c2 = new ContaImpl();
+    	Conta c2 = new Conta();
     	c2.setNome("Salario");
     	
     	c.addChild(c2);
     	
-    	ContaImpl c3 = new ContaImpl();
+    	Conta c3 = new Conta();
     	c3.setNome("Investimentos");
     	
     	c.addChild(c3);
     	
-    	Set<ContaImpl> children = c.getChildren();
+    	Set<Conta> children = c.getChildren();
     	Assert.assertNotNull(children);
     	Assert.assertTrue(children.size() == 2);
     	
-    	Iterator<ContaImpl> childrenIt = children.iterator();
+    	Iterator<Conta> childrenIt = children.iterator();
     	
-    	ContaImpl child1 = childrenIt.next();
+    	Conta child1 = childrenIt.next();
     	Assert.assertNotNull(child1.getId());
     	Assert.assertEquals(c.getId(), child1.getIdFather());
     	
-    	ContaImpl child2 = childrenIt.next();
+    	Conta child2 = childrenIt.next();
     	Assert.assertNotNull(child2.getId());
     	Assert.assertEquals(c.getId(), child2.getIdFather());
     }
     
     @Test
     public void testGetContaByNome() {
-    	ContaImpl c = new ContaImpl();
+    	Conta c = new Conta();
     	c.setNome("Receitas");
     	c.persist();
     	
-    	ContaImpl retrieved = (ContaImpl) ContaImpl.findContaImplsByNome("Receitas").getResultList().get(0);
+    	Conta retrieved = (Conta) Conta.findContasByNome("Receitas").getResultList().get(0);
     	Assert.assertNotNull(retrieved);
     	Assert.assertEquals("Receitas", retrieved.getNome());
     }

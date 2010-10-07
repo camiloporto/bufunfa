@@ -65,3 +65,15 @@ finder list --class ~.conta.ContaImpl
 finder add --finderName findContaImplsByNome --class ~.conta.ContaImpl
 finder add --finderName findContaImplsByNomeEquals --class ~.conta.ContaImpl
 // Spring Roo 1.1.0.M1 [rev 3a0b8a3] log opened at 2010-10-06 20:00:57
+entity --class ~conta.Lancamento --serializable
+field number --fieldName idConta --type java.lang.Long --notNull 
+field number --fieldName quantidade --type java.lang.Double --notNull
+field date --fieldName dataRegistro --type java.util.Date --notNull 
+field date --fieldName dataEfetivacao --type java.util.Date --notNull 
+field string --fieldName descricao
+test integration --entity ~conta.Lancamento
+test integration --entity ~conta.Lancamento
+hint
+perform tests
+finder list --class ~conta.Lancamento
+finder add --finderName findLancamentoesByDataEfetivacaoBetween --class ~conta.Lancamento

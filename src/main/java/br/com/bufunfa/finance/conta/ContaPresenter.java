@@ -70,7 +70,7 @@ public class ContaPresenter implements ApplicationListener<ContaEvent>, Applicat
 		
 		System.out.println("ContaPresenter.handleUILoaded()");
 		//TODO Receber erros gerados trtando alguma excecao
-		Set<ContaImpl> rootContas = contaService.getRootContas();
+		Set<Conta> rootContas = contaService.getRootContas();
 		ContaEventUILoaded evt = (ContaEventUILoaded) event;
 		
 		//TODO Fazer cast de acordo com o tipo de evento recebido (EventType)

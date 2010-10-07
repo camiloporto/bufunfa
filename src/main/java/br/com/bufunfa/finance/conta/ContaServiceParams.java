@@ -10,7 +10,7 @@ import org.springframework.roo.addon.tostring.RooToString;
 /**
  * Classe para armazenar os parametros
  * de entrada dos metodos de negocio
- * relacionado a {@link ContaImpl}
+ * relacionado a {@link Conta}
  * 
  * @author camilo
  *

@@ -1,13 +1,26 @@
 <aspectj>
 <aspects>
-<aspect name="br.com.bufunfa.finance.conta.ContaImpl_Roo_Entity"/>
-<aspect name="br.com.bufunfa.finance.conta.ContaImpl_Roo_Configurable"/>
-<aspect name="br.com.bufunfa.finance.conta.ContaImpl_Roo_ToString"/>
+<aspect name="br.com.bufunfa.finance.conta.ContaServiceParams_Roo_ToString"/>
+<aspect name="br.com.bufunfa.finance.conta.Conta_Roo_Entity"/>
+<aspect name="br.com.bufunfa.finance.conta.event.ContaEventCallback_Roo_JavaBean"/>
+<aspect name="br.com.bufunfa.finance.conta.ContaServiceParams_Roo_JavaBean"/>
+<aspect name="br.com.bufunfa.finance.conta.Conta_Roo_Finder"/>
+<aspect name="br.com.bufunfa.finance.conta.Lancamento_Roo_JavaBean"/>
+<aspect name="br.com.bufunfa.finance.conta.Lancamento_Roo_Entity"/>
+<aspect name="br.com.bufunfa.finance.conta.Conta_Roo_Configurable"/>
+<aspect name="br.com.bufunfa.finance.conta.ContaServiceParams_Roo_Serializable"/>
+<aspect name="br.com.bufunfa.finance.conta.event.ContaEventUILoaded_Roo_JavaBean"/>
 <aspect name="br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean"/>
-<aspect name="br.com.bufunfa.finance.conta.ContaImpl_Roo_Serializable"/>
-<aspect name="br.com.bufunfa.finance.conta.ContaImpl_Roo_Finder"/>
-<aspect name="br.com.bufunfa.finance.wui.UIConta_Roo_JavaBean"/>
-<aspect name="br.com.bufunfa.finance.conta.ContaImpl_Roo_JavaBean"/>
+<aspect name="br.com.bufunfa.finance.conta.Lancamento_Roo_Configurable"/>
+<aspect name="br.com.bufunfa.finance.conta.Conta_Roo_Serializable"/>
+<aspect name="br.com.bufunfa.finance.conta.Conta_Roo_JavaBean"/>
+<aspect name="br.com.bufunfa.finance.conta.Conta_Roo_ToString"/>
+<aspect name="br.com.bufunfa.finance.conta.event.ContaEvent_Roo_JavaBean"/>
+<aspect name="br.com.bufunfa.finance.wui.conta.UIConta_Roo_Serializable"/>
+<aspect name="br.com.bufunfa.finance.wui.conta.UIConta_Roo_JavaBean"/>
+<aspect name="br.com.bufunfa.finance.conta.event.ContaEvent_Roo_ToString"/>
+<aspect name="br.com.bufunfa.finance.conta.Lancamento_Roo_Serializable"/>
+<aspect name="br.com.bufunfa.finance.conta.Lancamento_Roo_ToString"/>
 </aspects>
 </aspectj>
 

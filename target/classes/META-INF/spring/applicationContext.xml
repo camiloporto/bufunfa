@@ -55,7 +55,10 @@
         <property name="persistenceUnitName" value="persistenceUnit"/>
     </bean>
     
+    <!-- Presenter Beans -->
+    <bean id="contaPresenter" class="br.com.bufunfa.finance.conta.ContaPresenter" />
+    
     <!-- JSF Beans -->
-    <bean id="Conta" class="br.com.bufunfa.finance.wui.UIConta" init-method="init" scope="session" />
+    <bean id="UiConta" class="br.com.bufunfa.finance.wui.conta.UIConta" init-method="init" />
     <bean id="Main" class="br.com.bufunfa.finance.wui.UIMain" scope="session" />
 </beans>

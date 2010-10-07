@@ -20,7 +20,7 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.serializable.RooSerializable;
 
-import br.com.bufunfa.finance.conta.ContaImpl;
+import br.com.bufunfa.finance.conta.Conta;
 import br.com.bufunfa.finance.conta.IContaService;
 import br.com.bufunfa.finance.conta.event.ContaEvent;
 import br.com.bufunfa.finance.conta.event.ContaEventCallback;
@@ -123,9 +123,9 @@ public class UIConta implements ApplicationContextAware, ApplicationListener<Con
 	 */
 	private void handleUILoaded(ContaEventCallback event) {
 		ContaEventUILoaded sourceEvent = (ContaEventUILoaded) event.getSourceEvent();
-		Set<ContaImpl> contasTree = sourceEvent.getRootContas();
+		Set<Conta> contasTree = sourceEvent.getRootContas();
 		
-		for (ContaImpl contaImpl : contasTree) {
+		for (Conta contaImpl : contasTree) {
 			mountTree(root, contaImpl);
 			
 		}
@@ -213,12 +213,12 @@ public class UIConta implements ApplicationContextAware, ApplicationListener<Con
 	 * @param node WUI TreeNode a encangar a conta
 	 * @param conta a conta e seus filhos a montar na WUI TreeNode
 	 */
-	private void mountTree(TreeNode fatherNode, ContaImpl conta) {
+	private void mountTree(TreeNode fatherNode, Conta conta) {
 		TreeNode contaNode = new DefaultTreeNode(conta.getNome(), null);
 		fatherNode.addChild(contaNode);
 		
-		Set<ContaImpl> childrenLevel1 = conta.getChildren();
-		for (ContaImpl contaImpl : childrenLevel1) {
+		Set<Conta> childrenLevel1 = conta.getChildren();
+		for (Conta contaImpl : childrenLevel1) {
 			contaNode.addChild(new DefaultTreeNode(contaImpl.getNome(), null));
 		}
 		

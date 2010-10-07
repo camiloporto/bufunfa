@@ -19,7 +19,7 @@ public interface IContaService {
 	 * 
 	 * @return contas reizes da hierarquia de contas
 	 */
-	public Set<ContaImpl> getRootContas();
+	public Set<Conta> getRootContas();
 	
 	/**
 	 * Adiciona uma nova conta na hierarquia
