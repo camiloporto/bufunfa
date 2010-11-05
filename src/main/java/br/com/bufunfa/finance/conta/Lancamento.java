@@ -6,6 +6,8 @@ import org.springframework.roo.addon.tostring.RooToString;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.serializable.RooSerializable;
 import javax.validation.constraints.NotNull;
+
+import java.math.BigDecimal;
 import java.util.Date;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -18,11 +20,16 @@ import org.springframework.format.annotation.DateTimeFormat;
 @RooEntity(finders = { "findLancamentoesByDataEfetivacaoBetween" })
 public class Lancamento {
 
-    @NotNull
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 2396515845940328300L;
+
+	@NotNull
     private Long idConta;
 
     @NotNull
-    private Double quantidade;
+    private BigDecimal quantidade;
 
     @NotNull
     @Temporal(TemporalType.TIMESTAMP)

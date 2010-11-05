@@ -3,6 +3,8 @@
  */
 package br.com.bufunfa.finance.conta;
 
+import java.math.BigDecimal;
+import java.util.Date;
 import java.util.Set;
 
 /**
@@ -27,5 +29,15 @@ public interface IContaService {
 	 * @param params
 	 */
 	public void addConta(ContaServiceParams params);
+	
+	/**
+	 * Adiciona uma transacao a uma conta
+	 * @param origem conta de origem (para retirar a quantidade)
+	 * @param destino conta de destino (a adicionar a quantidade)
+	 * @param quantidade quantidade a ser lancada nas contas
+	 * @param descricao descricao da transacao
+	 * @param dataEfetivacao data para a transacao ser efetivada (pode ser uma data futura
+	 */
+	public void addTransacao(Conta origem, Conta destino, BigDecimal quantidade, String descricao, Date dataEfetivacao);
 
 }

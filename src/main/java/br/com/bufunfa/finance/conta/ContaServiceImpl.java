@@ -4,6 +4,9 @@
 package br.com.bufunfa.finance.conta;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.Set;
 
@@ -53,6 +56,38 @@ public class ContaServiceImpl implements Serializable, IContaService {
 			}
 			
 		}
+	}
+	
+	/**
+	 * Adiciona uma transacao a uma conta
+	 * @param origem conta de origem (para retirar a quantidade)
+	 * @param destino conta de destino (a adicionar a quantidade)
+	 * @param quantidade quantidade a ser lancada nas contas
+	 * @param descricao descricao da transacao
+	 * @param dataEfetivacao data para a transacao ser efetivada (pode ser uma data futura
+	 */
+	public void addTransacao(Conta origem, Conta destino, BigDecimal quantidade, String descricao, Date dataEfetivacao) {
+		
+		Date dataRegistro = Calendar.getInstance().getTime(); 
+		
+		Lancamento l = new Lancamento();
+		l.setDataEfetivacao(dataEfetivacao);
+		l.setDataRegistro(dataRegistro);//data do registro eh a data atual
+		l.setDescricao(descricao);
+		l.setQuantidade(quantidade.negate());
+		l.setId(1L);//FIXME  gerar id automatico
+		
+		origem.addLancamento(l);
+		
+		Lancamento l2 = new Lancamento();
+		l2.setDataEfetivacao(dataEfetivacao);
+		l2.setDataRegistro(dataRegistro);//data do registro eh a data atual
+		l2.setDescricao(descricao);
+		l2.setQuantidade(quantidade);
+		l2.setId(2L);//FIXME gerar id automatiamente
+		
+		destino.addLancamento(l2);
+		
 	}
 	
 	//TODO Adicionar metodos para inserir lancamentos e efetuar transacoes (partida duplas)

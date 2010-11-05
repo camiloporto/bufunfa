@@ -1,8 +1,8 @@
 package br.com.bufunfa.finance.conta;
 
-import java.lang.Double;
 import java.lang.Long;
 import java.lang.String;
+import java.math.BigDecimal;
 import java.util.Date;
 
 privileged aspect Lancamento_Roo_JavaBean {
@@ -15,11 +15,11 @@ privileged aspect Lancamento_Roo_JavaBean {
         this.idConta = idConta;
     }
     
-    public Double Lancamento.getQuantidade() {
+    public BigDecimal Lancamento.getQuantidade() {
         return this.quantidade;
     }
     
-    public void Lancamento.setQuantidade(Double quantidade) {
+    public void Lancamento.setQuantidade(BigDecimal quantidade) {
         this.quantidade = quantidade;
     }
     

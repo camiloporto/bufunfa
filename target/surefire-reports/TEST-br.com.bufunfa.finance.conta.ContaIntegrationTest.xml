@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="2.35" errors="0" skipped="0" tests="12" name="br.com.bufunfa.finance.conta.ContaIntegrationTest">
+<testsuite failures="0" time="2.506" errors="0" skipped="0" tests="12" name="br.com.bufunfa.finance.conta.ContaIntegrationTest">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-6-openjdk/jre/lib/i386"/>
@@ -19,7 +19,7 @@
     <property name="basedir" value="/home/camilo/Ubuntu One/scm/Finance"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-6-openjdk/jre/lib/endorsed"/>
     <property name="os.arch" value="i386"/>
-    <property name="surefire.real.class.path" value="/tmp/surefirebooter8913930428390049302.jar"/>
+    <property name="surefire.real.class.path" value="/tmp/surefirebooter3264256964826961157.jar"/>
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="line.separator" value="
 "/>
@@ -57,16 +57,16 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="1.9" classname="br.com.bufunfa.finance.conta.ContaIntegrationTest" name="testFlush"/>
+  <testcase time="2.043" classname="br.com.bufunfa.finance.conta.ContaIntegrationTest" name="testFlush"/>
   <testcase time="0.005" classname="br.com.bufunfa.finance.conta.ContaIntegrationTest" name="testMerge"/>
-  <testcase time="0.005" classname="br.com.bufunfa.finance.conta.ContaIntegrationTest" name="testPersist"/>
-  <testcase time="0.012" classname="br.com.bufunfa.finance.conta.ContaIntegrationTest" name="testRemove"/>
-  <testcase time="0.017" classname="br.com.bufunfa.finance.conta.ContaIntegrationTest" name="testBasicSave"/>
-  <testcase time="0.023" classname="br.com.bufunfa.finance.conta.ContaIntegrationTest" name="testBasicAddChild"/>
-  <testcase time="0.03" classname="br.com.bufunfa.finance.conta.ContaIntegrationTest" name="testBasicGetChildren"/>
-  <testcase time="0.014" classname="br.com.bufunfa.finance.conta.ContaIntegrationTest" name="testGetContaByNome"/>
-  <testcase time="0.019" classname="br.com.bufunfa.finance.conta.ContaIntegrationTest" name="testCountContas"/>
+  <testcase time="0.006" classname="br.com.bufunfa.finance.conta.ContaIntegrationTest" name="testPersist"/>
+  <testcase time="0.014" classname="br.com.bufunfa.finance.conta.ContaIntegrationTest" name="testRemove"/>
+  <testcase time="0.021" classname="br.com.bufunfa.finance.conta.ContaIntegrationTest" name="testBasicSave"/>
+  <testcase time="0.018" classname="br.com.bufunfa.finance.conta.ContaIntegrationTest" name="testBasicAddChild"/>
+  <testcase time="0.035" classname="br.com.bufunfa.finance.conta.ContaIntegrationTest" name="testBasicGetChildren"/>
+  <testcase time="0.016" classname="br.com.bufunfa.finance.conta.ContaIntegrationTest" name="testGetContaByNome"/>
+  <testcase time="0.016" classname="br.com.bufunfa.finance.conta.ContaIntegrationTest" name="testCountContas"/>
   <testcase time="0.006" classname="br.com.bufunfa.finance.conta.ContaIntegrationTest" name="testFindConta"/>
   <testcase time="0.023" classname="br.com.bufunfa.finance.conta.ContaIntegrationTest" name="testFindAllContas"/>
-  <testcase time="0.018" classname="br.com.bufunfa.finance.conta.ContaIntegrationTest" name="testFindContaEntries"/>
+  <testcase time="0.017" classname="br.com.bufunfa.finance.conta.ContaIntegrationTest" name="testFindContaEntries"/>
 </testsuite>

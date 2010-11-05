@@ -21,7 +21,7 @@ privileged aspect LancamentoDataOnDemand_Roo_DataOnDemand {
         obj.setDataRegistro(new java.util.Date());
         obj.setDescricao("descricao_" + index);
         obj.setIdConta(new Integer(index).longValue());
-        obj.setQuantidade(new Integer(index).doubleValue());
+        obj.setQuantidade(null);
         return obj;
     }
     
