@@ -75,7 +75,6 @@ public class ContaServiceImpl implements Serializable, IContaService {
 		l.setDataRegistro(dataRegistro);//data do registro eh a data atual
 		l.setDescricao(descricao);
 		l.setQuantidade(quantidade.negate());
-		l.setId(1L);//FIXME  gerar id automatico
 		
 		origem.addLancamento(l);
 		
@@ -84,12 +83,9 @@ public class ContaServiceImpl implements Serializable, IContaService {
 		l2.setDataRegistro(dataRegistro);//data do registro eh a data atual
 		l2.setDescricao(descricao);
 		l2.setQuantidade(quantidade);
-		l2.setId(2L);//FIXME gerar id automatiamente
 		
 		destino.addLancamento(l2);
 		
 	}
 	
-	//TODO Adicionar metodos para inserir lancamentos e efetuar transacoes (partida duplas)
-
 }

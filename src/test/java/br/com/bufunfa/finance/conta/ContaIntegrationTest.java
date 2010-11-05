@@ -16,11 +16,15 @@ public class ContaIntegrationTest {
     @Test
     public void testBasicSave() {
     	Conta c = new Conta();
-    	c.setId(1L);
+//    	c.setId(1L);
     	c.setNome("Receitas");
     	c.persist();
     	
-    	Conta retrieved = Conta.findConta(1L);
+    	Long idPersisted = c.getId();
+    	Assert.assertNotNull(idPersisted);
+    	
+    	
+    	Conta retrieved = Conta.findConta(idPersisted);
     	Assert.assertNotNull(retrieved);
     	Assert.assertEquals("Receitas", retrieved.getNome());
     	

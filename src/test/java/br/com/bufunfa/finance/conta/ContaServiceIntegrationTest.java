@@ -5,7 +5,6 @@ package br.com.bufunfa.finance.conta;
 
 import java.math.BigDecimal;
 import java.util.Calendar;
-import java.util.List;
 import java.util.Set;
 
 import javax.annotation.Resource;
@@ -42,22 +41,18 @@ public class ContaServiceIntegrationTest {
 		System.out.println("ContaServiceIntegrationTest.prepare()");
 		
 		origem = new Conta();
-		origem.setId(1L);
 		origem.setNome("Receitas");
 		origem.persist();
     	
 		destino = new Conta();
-		destino.setId(2L);
 		destino.setNome("Despesas");
 		destino.persist();
     	
     	Conta c3 = new Conta();
-    	c3.setId(3L);
     	c3.setNome("Ativo");
     	c3.persist();
     	
     	Conta c4 = new Conta();
-    	c4.setId(4L);
     	c4.setNome("Passivo");
     	c4.persist();
 	}
@@ -65,7 +60,6 @@ public class ContaServiceIntegrationTest {
 	@Test
 	@Rollback
 	public void testGetRootContas() {
-//		prepare();
 		Assert.assertNotNull(contaService);
 		Set<Conta> roots = contaService.getRootContas();
 		Assert.assertNotNull(roots);
@@ -88,12 +82,6 @@ public class ContaServiceIntegrationTest {
 		Lancamento lancamentosOrigem = origem.getLancamentos(cal.getTime(), cal.getTime()).get(0);
 		Lancamento lancamentosDestino = destino.getLancamentos(cal.getTime(), cal.getTime()).get(0);
 		
-		System.out
-		.println("ContaServiceIntegrationTest.testBasicAddTransacao() " + lancamentosOrigem);
-
-System.out
-.println("ContaServiceIntegrationTest.testBasicAddTransacao() " + lancamentosDestino);
-		
 		Assert.assertNotNull(lancamentosOrigem);
 		Assert.assertNotNull(lancamentosDestino);
 		
@@ -106,7 +94,7 @@ System.out
 		//assegura que a soma dos lancamentos sao zero
 		Assert.assertEquals(new BigDecimal(-20.0), lancamentosOrigem.getQuantidade());
 		Assert.assertEquals(new BigDecimal(20.0), lancamentosDestino.getQuantidade());
-//		Assert.assertTrue(lancamentosOrigem.getQuantidade().add(lancamentosDestino.getQuantidade()).equals(new BigDecimal(0.0)));
+		Assert.assertTrue(lancamentosOrigem.getQuantidade().add(lancamentosDestino.getQuantidade()).equals(new BigDecimal(0.0)));
 	}
 
 }

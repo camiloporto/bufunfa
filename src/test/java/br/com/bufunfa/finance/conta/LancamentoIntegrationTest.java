@@ -15,7 +15,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.roo.addon.test.RooIntegrationTest;
-import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.ContextConfiguration;
 
 /**
@@ -31,7 +30,6 @@ public class LancamentoIntegrationTest {
 	@Before
 	public void beforeTest() {
 		contaSample = new Conta();
-		contaSample.setId(1L);
 		contaSample.setNome("Receitas");
 		
 		contaSample.persist();
@@ -50,14 +48,16 @@ public class LancamentoIntegrationTest {
 		l.setDataEfetivacao(parseDate("30/10/2009"));
 		l.setDataRegistro(parseDate("30/10/2009"));
 		l.setDescricao("lancamento de teste");
-		l.setId(123L);
 		l.setQuantidade(new BigDecimal(2.0));
 		
 		contaSample.addLancamento(l);
 		
-		Lancamento retrieved = Lancamento.findLancamento(123L);
+		Long idPersisted = l.getId();
+		Assert.assertNotNull(idPersisted);
+		
+		Lancamento retrieved = Lancamento.findLancamento(idPersisted);
 		Assert.assertNotNull(retrieved);
-		Assert.assertEquals(new Long(123), retrieved.getId());
+		Assert.assertEquals(idPersisted, retrieved.getId());
 		Assert.assertEquals(contaSample.getId(), retrieved.getIdConta());
 		
 	}
@@ -68,14 +68,12 @@ public class LancamentoIntegrationTest {
 		l.setDataEfetivacao(parseDate("30/10/2010"));
 		l.setDataRegistro(parseDate("30/10/2010"));
 		l.setDescricao("lancamento de teste");
-		l.setId(1L);
 		l.setQuantidade(new BigDecimal(20.0));
 		
 		Lancamento l2 = new Lancamento();
 		l2.setDataEfetivacao(parseDate("20/10/2010"));
 		l2.setDataRegistro(parseDate("20/10/2010"));
 		l2.setDescricao("lancamento de teste 2");
-		l2.setId(2L);
 		l2.setQuantidade(new BigDecimal(25.0));
 		
 		contaSample.addLancamento(l);
@@ -101,14 +99,12 @@ public class LancamentoIntegrationTest {
 		l.setDataEfetivacao(parseDate("30/11/2010"));
 		l.setDataRegistro(parseDate("30/11/2010"));
 		l.setDescricao("lancamento de teste");
-		l.setId(1L);
 		l.setQuantidade(new BigDecimal(20.0));
 		
 		Lancamento l2 = new Lancamento();
 		l2.setDataEfetivacao(parseDate("20/11/2010"));
 		l2.setDataRegistro(parseDate("20/11/2010"));
 		l2.setDescricao("lancamento de teste 2");
-		l2.setId(2L);
 		l2.setQuantidade(new BigDecimal(25.0));
 		
 		contaSample.addLancamento(l);
