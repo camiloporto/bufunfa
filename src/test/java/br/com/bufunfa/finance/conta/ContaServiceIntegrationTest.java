@@ -18,6 +18,8 @@ import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import br.com.bufunfa.finance.utils.TestUtils;
+
 /**
  * Testes da implementacao do servico de contas
  * 
@@ -38,7 +40,6 @@ public class ContaServiceIntegrationTest {
 	
 	@BeforeClass
 	public static void prepare() {
-		System.out.println("ContaServiceIntegrationTest.prepare()");
 		
 		origem = new Conta();
 		origem.setNome("Receitas");
@@ -47,6 +48,7 @@ public class ContaServiceIntegrationTest {
 		destino = new Conta();
 		destino.setNome("Despesas");
 		destino.persist();
+		
     	
     	Conta c3 = new Conta();
     	c3.setNome("Ativo");
@@ -95,6 +97,46 @@ public class ContaServiceIntegrationTest {
 		Assert.assertEquals(new BigDecimal(-20.0), lancamentosOrigem.getQuantidade());
 		Assert.assertEquals(new BigDecimal(20.0), lancamentosDestino.getQuantidade());
 		Assert.assertTrue(lancamentosOrigem.getQuantidade().add(lancamentosDestino.getQuantidade()).equals(new BigDecimal(0.0)));
+	}
+	
+	@Test
+	public void testGetBasicExtrato() {
+		Conta contaTestExtrato = new Conta();
+		contaTestExtrato.setNome("Conta Corrente");
+		contaTestExtrato.persist();
+		
+		Lancamento l1 = TestUtils.createLancamento(
+				20.0, 
+				TestUtils.createDate(2010, 1, 5),
+				TestUtils.createDate(2010, 1, 5), 
+				"Deposito efetuado");
+		
+		Lancamento l2 = TestUtils.createLancamento(
+				-25.0, 
+				TestUtils.createDate(2010, 1, 10),
+				TestUtils.createDate(2010, 1, 10), 
+				"Almoco no debito");
+		
+		Lancamento l3 = TestUtils.createLancamento(
+				150.0, 
+				TestUtils.createDate(2010, 1, 15),
+				TestUtils.createDate(2010, 1, 15), 
+				"Deposito do aluguel");
+		contaTestExtrato.addLancamento(l1);
+		contaTestExtrato.addLancamento(l2);
+		contaTestExtrato.addLancamento(l3);
+		
+		//recupera o extrato entre 1/1/2010 a 10/1/2010
+		Extrato e = contaService.getExtrato(
+				contaTestExtrato.getId(), 
+				TestUtils.createDate(2010, 1, 4),
+				TestUtils.createDate(2010, 1, 10));
+		
+		//verifica que o saldo calculado eh igual ao esperado: -5.0
+		Assert.assertNotNull(e);
+		Assert.assertEquals(new BigDecimal(-5.0), e.getSaldo());
+		
+		//FIXME Efetuar teste com data de pesquisa coincidindo com as datas do primeiro e ultimo lancamento. deve incluir os ilmites
 	}
 
 }

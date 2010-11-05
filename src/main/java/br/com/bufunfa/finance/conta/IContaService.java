@@ -39,5 +39,14 @@ public interface IContaService {
 	 * @param dataEfetivacao data para a transacao ser efetivada (pode ser uma data futura
 	 */
 	public void addTransacao(Conta origem, Conta destino, BigDecimal quantidade, String descricao, Date dataEfetivacao);
+	
+	/**
+	 * Retorna o extrato de uma conta em determinado periodo
+	 * @param idConta id da conta
+	 * @param inicio inicio do periodo
+	 * @param fim final do periodo
+	 * @return extrato da conta no periodo informado
+	 */
+	public Extrato getExtrato(Long idConta, Date inicio, Date fim);
 
 }

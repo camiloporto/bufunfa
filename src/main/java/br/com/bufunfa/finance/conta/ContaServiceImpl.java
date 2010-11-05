@@ -88,4 +88,15 @@ public class ContaServiceImpl implements Serializable, IContaService {
 		
 	}
 	
+	/**
+	 * @see IContaService#getExtrato(Long, Date, Date)
+	 */
+	public Extrato getExtrato(Long idConta, Date inicio, Date fim) {
+		Conta c = Conta.findConta(idConta);
+		List<Lancamento> lancamentos = c.getLancamentos(inicio, fim);
+		Extrato e = new Extrato(c, lancamentos);
+		
+		return e;
+	}
+	
 }

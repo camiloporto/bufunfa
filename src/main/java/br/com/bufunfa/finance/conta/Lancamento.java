@@ -18,7 +18,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 @RooToString
 @RooSerializable
 @RooEntity(finders = { "findLancamentoesByDataEfetivacaoBetween" })
-public class Lancamento {
+public class Lancamento implements Comparable<Lancamento> {
 
     /**
 	 * 
@@ -42,4 +42,9 @@ public class Lancamento {
     private Date dataEfetivacao;
 
     private String descricao;
+
+	@Override
+	public int compareTo(Lancamento l) {
+		return getDataEfetivacao().compareTo(l.getDataEfetivacao());
+	}
 }

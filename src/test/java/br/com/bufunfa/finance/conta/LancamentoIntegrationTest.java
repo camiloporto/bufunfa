@@ -118,7 +118,7 @@ public class LancamentoIntegrationTest {
 		Assert.assertEquals(new Integer(2), new Integer(lancamentos.size()));
 	}
 	
-	Date parseDate(String dateStr) throws ParseException {
+	static Date parseDate(String dateStr) throws ParseException {
 		DateFormat df = DateFormat.getDateInstance();
 		return df.parse(dateStr);
 	}
