@@ -5,6 +5,9 @@ package br.com.bufunfa.finance.conta;
 
 import java.math.BigDecimal;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
@@ -49,6 +52,10 @@ public class Extrato {
 		}
 		
 		return soma;
+	}
+	
+	public Set<Lancamento> getLancamentos() {
+		return Collections.unmodifiableSet(this.lancamentos);
 	}
 	
 	

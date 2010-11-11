@@ -93,10 +93,68 @@ public class ContaServiceImpl implements Serializable, IContaService {
 	 */
 	public Extrato getExtrato(Long idConta, Date inicio, Date fim) {
 		Conta c = Conta.findConta(idConta);
-		List<Lancamento> lancamentos = c.getLancamentos(inicio, fim);
+		
+		//Expande os limites de inicio e fim.
+		//Minimzando os valores de inicio e maximizando
+		//os valores do fim
+		List<Lancamento> lancamentos = c.getLancamentos(
+				minimizeDate(inicio),
+				maximizeDate(fim));
+		
 		Extrato e = new Extrato(c, lancamentos);
 		
 		return e;
+	}
+	
+	/*
+	 * (non-Javadoc)
+	 * @see br.com.bufunfa.finance.conta.IContaService#getSaldo(java.lang.Long, java.util.Date)
+	 */
+	public BigDecimal getSaldo(Long idConta, Date dataReferencia) {
+		Conta c = Conta.findConta(idConta);
+		
+		return c.getSaldo(dataReferencia);
+		
+	}
+	
+	/**
+	 * Atribui aos valores de hora, minuto, segundo
+	 * e milisegundo de uma data o valor minimo
+	 * possivel para eles
+	 * @param date a data
+	 * @return data com valores de hora, minuto, segundo, e 
+	 * milisegundo minimos
+	 */
+	Date minimizeDate(Date date) {
+		Calendar c = Calendar.getInstance();
+		c.setTime(date);
+		
+		c.set(Calendar.HOUR_OF_DAY, c.getMinimum(Calendar.HOUR_OF_DAY));
+		c.set(Calendar.MINUTE, c.getMinimum(Calendar.MINUTE));
+		c.set(Calendar.SECOND, c.getMinimum(Calendar.SECOND));
+		c.set(Calendar.MILLISECOND, c.getMinimum(Calendar.MILLISECOND));
+		
+		return c.getTime();
+	}
+	
+	/**
+	 * Atribui aos valores de hora, minuto, segundo
+	 * e milisegundo de uma data o valor minimo
+	 * possivel para eles
+	 * @param date a data
+	 * @return data com valores de hora, minuto, segundo, e 
+	 * milisegundo minimos
+	 */
+	Date maximizeDate(Date date) {
+		Calendar c = Calendar.getInstance();
+		c.setTime(date);
+		
+		c.set(Calendar.HOUR_OF_DAY, c.getMaximum(Calendar.HOUR_OF_DAY));
+		c.set(Calendar.MINUTE, c.getMaximum(Calendar.MINUTE));
+		c.set(Calendar.SECOND, c.getMaximum(Calendar.SECOND));
+		c.set(Calendar.MILLISECOND, c.getMaximum(Calendar.MILLISECOND));
+		
+		return c.getTime();
 	}
 	
 }

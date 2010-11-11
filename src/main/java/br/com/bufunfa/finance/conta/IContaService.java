@@ -48,5 +48,14 @@ public interface IContaService {
 	 * @return extrato da conta no periodo informado
 	 */
 	public Extrato getExtrato(Long idConta, Date inicio, Date fim);
+	
+	/**
+	 * Retorna o saldo de uma conta em uma determinada
+	 * data de referencia
+	 * @param idConta id da conta
+	 * @param dataReferencia data de referencia
+	 * @return saldo da conta
+	 */
+	public BigDecimal getSaldo(Long idConta, Date dataReferencia);
 
 }

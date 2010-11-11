@@ -31,6 +31,10 @@ import br.com.bufunfa.finance.utils.TestUtils;
 @ContextConfiguration(locations = "classpath:/META-INF/spring/applicationContext-test.xml")
 public class ContaServiceIntegrationTest {
 	
+	public ContaServiceIntegrationTest() {
+		
+	}
+	
 	@Resource(name="contaService")
 	private IContaService contaService;
 	
@@ -135,8 +139,133 @@ public class ContaServiceIntegrationTest {
 		//verifica que o saldo calculado eh igual ao esperado: -5.0
 		Assert.assertNotNull(e);
 		Assert.assertEquals(new BigDecimal(-5.0), e.getSaldo());
-		
-		//FIXME Efetuar teste com data de pesquisa coincidindo com as datas do primeiro e ultimo lancamento. deve incluir os ilmites
+		Assert.assertEquals(2, e.getLancamentos().size());
+		 
 	}
-
+	
+	/**
+	 * teste com data de pesquisa coincidindo com as 
+	 * datas do primeiro e ultimo lancamento. deve incluir os ilmites
+	 */
+	@Test
+	public void testGetExtratoComDatasLimites() {
+		Conta contaTestExtrato = new Conta();
+		contaTestExtrato.setNome("Conta Corrente");
+		contaTestExtrato.persist();
+		
+		Lancamento l1 = TestUtils.createLancamento(
+				20.0, 
+				TestUtils.createDate(2010, 1, 5),
+				TestUtils.createDate(2010, 1, 5), 
+				"Deposito efetuado");
+		
+		Lancamento l2 = TestUtils.createLancamento(
+				-25.0, 
+				TestUtils.createDate(2010, 1, 10),
+				TestUtils.createDate(2010, 1, 10), 
+				"Almoco no debito");
+		
+		Lancamento l3 = TestUtils.createLancamento(
+				150.0, 
+				TestUtils.createDate(2010, 1, 15),
+				TestUtils.createDate(2010, 1, 15), 
+				"Deposito do aluguel");
+		contaTestExtrato.addLancamento(l1);
+		contaTestExtrato.addLancamento(l2);
+		contaTestExtrato.addLancamento(l3);
+		
+		//recupera o extrato entre 5/1/2010 a 10/1/2010
+		Extrato e = contaService.getExtrato(
+				contaTestExtrato.getId(), 
+				TestUtils.createDate(2010, 1, 5),
+				TestUtils.createDate(2010, 1, 10));
+		
+		//verifica que o saldo calculado eh igual ao esperado: -5.0
+		Assert.assertNotNull(e);
+		Assert.assertEquals(new BigDecimal(-5.0), e.getSaldo());
+		Assert.assertEquals(2, e.getLancamentos().size());
+		
+	}
+	
+	@Test
+	public void testBasicGetSaldo() {
+		Conta contaTestExtrato = new Conta();
+		contaTestExtrato.setNome("Conta Corrente");
+		contaTestExtrato.persist();
+		
+		Lancamento l1 = TestUtils.createLancamento(
+				20.0, 
+				TestUtils.createDate(2010, 1, 5),
+				TestUtils.createDate(2010, 1, 5), 
+				"Deposito efetuado");
+		
+		Lancamento l2 = TestUtils.createLancamento(
+				-25.0, 
+				TestUtils.createDate(2010, 1, 10),
+				TestUtils.createDate(2010, 1, 10), 
+				"Almoco no debito");
+		
+		Lancamento l3 = TestUtils.createLancamento(
+				150.0, 
+				TestUtils.createDate(2010, 1, 15),
+				TestUtils.createDate(2010, 1, 15), 
+				"Deposito do aluguel");
+		contaTestExtrato.addLancamento(l1);
+		contaTestExtrato.addLancamento(l2);
+		contaTestExtrato.addLancamento(l3);
+		
+		BigDecimal saldo = contaService.getSaldo(
+				contaTestExtrato.getId(), 
+				TestUtils.createDate(2010, 1, 15));
+		
+		Assert.assertEquals(new BigDecimal(145.0), saldo);
+	}
+	/*
+	@Test
+	public void testGetSaldoDeContaNaoFolha() {
+		Conta contaTestSaldo = new Conta();
+		contaTestSaldo.setNome("Conta Corrente");
+		contaTestSaldo.persist();
+		
+		Conta contaTestSaldoFilha1 = new Conta();
+		contaTestSaldoFilha1.setNome("Conta Filha 1");
+		
+		Conta contaTestSaldoFilha2 = new Conta();
+		contaTestSaldoFilha2.setNome("Conta Filha 2");
+		
+		contaTestSaldo.addChild(contaTestSaldoFilha1);
+		contaTestSaldo.addChild(contaTestSaldoFilha2);
+		
+		Lancamento l1 = TestUtils.createLancamento(
+				20.0, 
+				TestUtils.createDate(2010, 1, 5),
+				TestUtils.createDate(2010, 1, 5), 
+				"Deposito efetuado");
+		
+		Lancamento l2 = TestUtils.createLancamento(
+				-25.0, 
+				TestUtils.createDate(2010, 1, 10),
+				TestUtils.createDate(2010, 1, 10), 
+				"Almoco no debito");
+		
+		Lancamento l3 = TestUtils.createLancamento(
+				150.0, 
+				TestUtils.createDate(2010, 1, 15),
+				TestUtils.createDate(2010, 1, 15), 
+				"Deposito do aluguel");
+		
+		contaTestSaldoFilha1.addLancamento(l1);
+		contaTestSaldoFilha1.addLancamento(l2);
+		contaTestSaldoFilha2.addLancamento(l3);
+		
+		
+		BigDecimal saldo = contaService.getSaldo(
+				contaTestSaldo.getId(), 
+				TestUtils.createDate(2010, 1, 15));
+		
+		Assert.assertEquals(new BigDecimal(145.0), saldo);
+		
+	}
+	*/
+	//FIXME efetuar mais testes com valores invalidos para entradas dos metodos de servico
 }

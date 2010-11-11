@@ -1,5 +1,6 @@
 package br.com.bufunfa.finance.conta;
 
+import java.math.BigDecimal;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -8,6 +9,8 @@ import junit.framework.Assert;
 import org.junit.Test;
 import org.springframework.roo.addon.test.RooIntegrationTest;
 import org.springframework.test.context.ContextConfiguration;
+
+import br.com.bufunfa.finance.utils.TestUtils;
 
 @RooIntegrationTest(entity = Conta.class)
 @ContextConfiguration(locations = "classpath:/META-INF/spring/applicationContext-test.xml")
@@ -92,4 +95,84 @@ public class ContaIntegrationTest {
     	Assert.assertNotNull(retrieved);
     	Assert.assertEquals("Receitas", retrieved.getNome());
     }
+    
+    @Test
+    public void testBasicGetSaldo() {
+    	
+    	Conta contaTest = new Conta();
+		contaTest.setNome("Conta Corrente");
+		contaTest.persist();
+		
+		Lancamento l1 = TestUtils.createLancamento(
+				20.0, 
+				TestUtils.createDate(2010, 1, 5),
+				TestUtils.createDate(2010, 1, 5), 
+				"Deposito efetuado");
+		
+		Lancamento l2 = TestUtils.createLancamento(
+				-25.0, 
+				TestUtils.createDate(2010, 1, 10),
+				TestUtils.createDate(2010, 1, 10), 
+				"Almoco no debito");
+		
+		Lancamento l3 = TestUtils.createLancamento(
+				150.0, 
+				TestUtils.createDate(2010, 1, 15),
+				TestUtils.createDate(2010, 1, 15), 
+				"Deposito do aluguel");
+		contaTest.addLancamento(l1);
+		contaTest.addLancamento(l2);
+		contaTest.addLancamento(l3);
+		
+		BigDecimal saldo = contaTest.getSaldo( 
+				TestUtils.createDate(2010, 1, 15));
+		
+		Assert.assertEquals(new BigDecimal(145.0), saldo);
+    	
+    }
+    
+    @Test
+	public void testGetSaldoDeContaNaoFolha() {
+		Conta contaTestSaldo = new Conta();
+		contaTestSaldo.setNome("Conta Corrente");
+		contaTestSaldo.persist();
+		
+		Conta contaTestSaldoFilha1 = new Conta();
+		contaTestSaldoFilha1.setNome("Conta Filha 1");
+		
+		Conta contaTestSaldoFilha2 = new Conta();
+		contaTestSaldoFilha2.setNome("Conta Filha 2");
+		
+		contaTestSaldo.addChild(contaTestSaldoFilha1);
+		contaTestSaldo.addChild(contaTestSaldoFilha2);
+		
+		Lancamento l1 = TestUtils.createLancamento(
+				20.0, 
+				TestUtils.createDate(2010, 1, 5),
+				TestUtils.createDate(2010, 1, 5), 
+				"Deposito efetuado");
+		
+		Lancamento l2 = TestUtils.createLancamento(
+				-25.0, 
+				TestUtils.createDate(2010, 1, 10),
+				TestUtils.createDate(2010, 1, 10), 
+				"Almoco no debito");
+		
+		Lancamento l3 = TestUtils.createLancamento(
+				150.0, 
+				TestUtils.createDate(2010, 1, 15),
+				TestUtils.createDate(2010, 1, 15), 
+				"Deposito do aluguel");
+		
+		contaTestSaldoFilha1.addLancamento(l1);
+		contaTestSaldoFilha1.addLancamento(l2);
+		contaTestSaldoFilha2.addLancamento(l3);
+		
+		
+		BigDecimal saldo = contaTestSaldo.getSaldo(
+				TestUtils.createDate(2010, 1, 15));
+		
+		Assert.assertEquals(new BigDecimal(145.0), saldo);
+		//FIXME Implementar saldo de conta nao folha!
+	}
 }
