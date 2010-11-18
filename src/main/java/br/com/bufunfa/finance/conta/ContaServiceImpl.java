@@ -23,6 +23,8 @@ public class ContaServiceImpl implements Serializable, IContaService {
 	 * 
 	 */
 	private static final long serialVersionUID = 3053392618339886088L;
+	
+	//TODO Implementar funcao que cria um novo esquema de contas (um novo usuario? novo SistemaDeContas - nova entidade?)
 
 	/* (non-Javadoc)
 	 * @see br.com.bufunfa.finance.conta.IContaService#getRootContas()

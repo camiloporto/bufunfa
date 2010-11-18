@@ -220,7 +220,7 @@ public class ContaServiceIntegrationTest {
 		
 		Assert.assertEquals(new BigDecimal(145.0), saldo);
 	}
-	/*
+	
 	@Test
 	public void testGetSaldoDeContaNaoFolha() {
 		Conta contaTestSaldo = new Conta();
@@ -266,6 +266,6 @@ public class ContaServiceIntegrationTest {
 		Assert.assertEquals(new BigDecimal(145.0), saldo);
 		
 	}
-	*/
+	
 	//FIXME efetuar mais testes com valores invalidos para entradas dos metodos de servico
 }

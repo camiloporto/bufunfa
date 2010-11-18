@@ -168,6 +168,8 @@ public class ContaIntegrationTest {
 		contaTestSaldoFilha1.addLancamento(l2);
 		contaTestSaldoFilha2.addLancamento(l3);
 		
+		Assert.assertEquals(new BigDecimal(-5.0), contaTestSaldoFilha1.getSaldo(TestUtils.createDate(2010, 1, 15)));
+		Assert.assertEquals(new BigDecimal(150.0), contaTestSaldoFilha2.getSaldo(TestUtils.createDate(2010, 1, 15)));
 		
 		BigDecimal saldo = contaTestSaldo.getSaldo(
 				TestUtils.createDate(2010, 1, 15));
