@@ -4,6 +4,8 @@
 package br.com.bufunfa.finance.conta;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Date;
 
 import org.springframework.stereotype.Service;
 
@@ -17,6 +19,20 @@ import org.springframework.stereotype.Service;
 @Service("sistemaContaService")
 public class SistemaContaServiceImpl implements ISistemaContaService,
 		Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4660537375580065860L;
+	
+	/*
+	 * (non-Javadoc)
+	 * @see br.com.bufunfa.finance.conta.ISistemaContaService#getSaldoOperacional(java.lang.Long, java.util.Date, java.util.Date)
+	 */
+	public BigDecimal getSaldoOperacional(Long idSistemaConta, Date inicio, Date fim) {
+		//FIXME implementar
+		return null;
+	}
 
 	/* (non-Javadoc)
 	 * @see br.com.bufunfa.finance.conta.ISistemaContaService#addSistemaConta(java.lang.String)
@@ -33,6 +49,13 @@ public class SistemaContaServiceImpl implements ISistemaContaService,
 		novoSistema.persist();
 	}
 	
+	/**
+	 * Constroi a hierarquia inicial de contas de um sistema 
+	 * de contas. A hierarquia consiste nas contas
+	 * de receitas, despesas, ativos e passivos
+	 * @param nomeContaRaiz nome da conta raiz
+	 * @return hierarquia de conta
+	 */
 	private Conta createHierarquiaInicial(String nomeContaRaiz) {
 		Conta rootConta = new Conta();
 		rootConta.setNome(nomeContaRaiz);

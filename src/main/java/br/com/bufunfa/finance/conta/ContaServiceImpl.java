@@ -30,6 +30,7 @@ public class ContaServiceImpl implements Serializable, IContaService {
 	 * @see br.com.bufunfa.finance.conta.IContaService#getRootContas()
 	 */
 	@Override
+	@Deprecated //use SistemaConta
 	public Set<Conta> getRootContas() {
 		return Conta.getRoots();
 	}
