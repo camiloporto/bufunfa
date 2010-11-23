@@ -1,6 +1,7 @@
 package br.com.bufunfa.finance.conta;
 
 import java.math.BigDecimal;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -94,6 +95,91 @@ public class ContaIntegrationTest {
     	Conta retrieved = (Conta) Conta.findContasByNome("Receitas").getResultList().get(0);
     	Assert.assertNotNull(retrieved);
     	Assert.assertEquals("Receitas", retrieved.getNome());
+    }
+    
+    @Test
+	public void testGetSomaLancamentosDeContaNaoFolha() {
+		Conta contaTestSoma = new Conta();
+		contaTestSoma.setNome("Conta Corrente");
+		contaTestSoma.persist();
+		
+		Conta contaTestSomaFilha1 = new Conta();
+		contaTestSomaFilha1.setNome("Conta Filha 1");
+		
+		Conta contaTestSomaFilha2 = new Conta();
+		contaTestSomaFilha2.setNome("Conta Filha 2");
+		
+		contaTestSoma.addChild(contaTestSomaFilha1);
+		contaTestSoma.addChild(contaTestSomaFilha2);
+		
+		Lancamento l1 = TestUtils.createLancamento(
+				20.0, 
+				TestUtils.createDate(2010, 1, 5),
+				TestUtils.createDate(2010, 1, 5), 
+				"Deposito efetuado");
+		
+		Lancamento l2 = TestUtils.createLancamento(
+				-25.0, 
+				TestUtils.createDate(2010, 1, 10),
+				TestUtils.createDate(2010, 1, 10), 
+				"Almoco no debito");
+		
+		Lancamento l3 = TestUtils.createLancamento(
+				150.0, 
+				TestUtils.createDate(2010, 1, 15),
+				TestUtils.createDate(2010, 1, 15), 
+				"Deposito do aluguel");
+		
+		contaTestSomaFilha1.addLancamento(l1);
+		contaTestSomaFilha1.addLancamento(l2);
+		contaTestSomaFilha2.addLancamento(l3);
+		
+		Date initDate = TestUtils.createDate(2010, 1, 5);
+		Date endDate = TestUtils.createDate(2010, 1, 15);
+		
+		Assert.assertEquals(new BigDecimal(-5.0), contaTestSomaFilha1.getSomaLancamentos(initDate, endDate));
+		Assert.assertEquals(new BigDecimal(150.0), contaTestSomaFilha2.getSomaLancamentos(initDate, endDate));
+		
+		
+		BigDecimal saldo = contaTestSoma.getSomaLancamentos(initDate, endDate);
+		
+		Assert.assertEquals(new BigDecimal(145.0), saldo);
+	}
+    
+    @Test
+    public void testBasicGetSomaLancamentos() {
+    	
+    	Conta contaTest = new Conta();
+		contaTest.setNome("Conta Corrente");
+		contaTest.persist();
+		
+		
+		Lancamento l1 = TestUtils.createLancamento(
+				20.0, 
+				TestUtils.createDate(2010, 1, 5),
+				TestUtils.createDate(2010, 1, 5), 
+				"Deposito efetuado");
+		
+		Lancamento l2 = TestUtils.createLancamento(
+				-25.0, 
+				TestUtils.createDate(2010, 1, 10),
+				TestUtils.createDate(2010, 1, 10), 
+				"Almoco no debito");
+		
+		Lancamento l3 = TestUtils.createLancamento(
+				150.0, 
+				TestUtils.createDate(2010, 1, 15),
+				TestUtils.createDate(2010, 1, 15), 
+				"Deposito do aluguel");
+		contaTest.addLancamento(l1);
+		contaTest.addLancamento(l2);
+		contaTest.addLancamento(l3);
+		
+		
+		BigDecimal soma = contaTest.getSomaLancamentos(TestUtils.createDate(2010, 1, 5), TestUtils.createDate(2010, 1, 15));
+		
+		Assert.assertEquals(new BigDecimal(145.0), soma);
+    	
     }
     
     @Test

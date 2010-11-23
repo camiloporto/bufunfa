@@ -3,6 +3,7 @@
  */
 package br.com.bufunfa.finance.conta;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Set;
 
@@ -14,6 +15,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import br.com.bufunfa.finance.utils.TestUtils;
 
 /**
  * @author camilo
@@ -29,6 +32,49 @@ public class SistemaContaServiceTest {
 	public SistemaContaServiceTest() {
 		
 	}
+	
+	@Test
+    public void testGetSaldoOperacional() {
+    	sistemaContaService.addSistemaConta("SistemaConta");
+    	List<SistemaConta> lista = SistemaConta.findAllSistemaContas();
+		Assert.assertNotNull(lista);
+		Assert.assertTrue(lista.size() > 0);
+		
+		SistemaConta novo = null;
+		for (SistemaConta sistemaConta : lista) {
+			if("SistemaConta".equals(sistemaConta.getNome())) {
+				novo = sistemaConta;
+			}
+		}
+		
+		Assert.assertNotNull(novo);
+		Assert.assertNotNull(novo.getId());
+		Assert.assertNotNull(novo.getIdContaRoot());
+		
+		Conta despesa = novo.getContaDespesa();
+		Conta receita = novo.getContaReceita();
+		
+		SistemaContaIntegrationTest.adicionaAlgumasDespesas(despesa);
+		SistemaContaIntegrationTest.adicionaAlgumasReceitas(receita);
+		
+		BigDecimal saldoOperacional = sistemaContaService.getSaldoOperacional(
+				novo.getId(),
+				TestUtils.createDate(2010, 1, 5), 
+				TestUtils.createDate(2010, 1, 30));
+		BigDecimal saldoOperacionalEsperado = new BigDecimal("558.00");
+		
+		Assert.assertEquals(saldoOperacionalEsperado, saldoOperacional);
+		
+		/*
+		 * retorna o saldo operacional em 30/1/2010
+		 */
+		saldoOperacional = sistemaContaService.getSaldoOperacional(
+				novo.getId(), 
+				TestUtils.createDate(2010, 1, 30));
+		saldoOperacionalEsperado = new BigDecimal("558.00");
+		
+		Assert.assertEquals(saldoOperacionalEsperado, saldoOperacional);
+    }
 	
 	@Test
 	public void testAddNovoSistemaConta() {

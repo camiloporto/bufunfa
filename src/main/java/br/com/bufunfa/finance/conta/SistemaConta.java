@@ -47,11 +47,13 @@ public class SistemaConta {
     /**
      * Retorna o saldo operacional das receitas e despesas
      * em determinado periodo
-     * FIXME implementar metodo por periodo de datas (inicio..fim). Usar consulta algo como extrato e somar os lancamentos
      * 
      */
     public BigDecimal getSaldoOperacional(Date inicio, Date fim) {
-    	return null;
+    	BigDecimal saldoReceita = getContaReceita().getSomaLancamentos(inicio, fim);
+    	BigDecimal saldoDespesa = getContaDespesa().getSomaLancamentos(inicio, fim);
+    	
+    	return saldoReceita.add(saldoDespesa).setScale(2, RoundingMode.HALF_EVEN);
     }
     
     public BigDecimal getSaldoOperacional(Date dataReferencia) {

@@ -12,6 +12,8 @@ import java.util.Set;
 
 import org.springframework.stereotype.Service;
 
+import br.com.bufunfa.finance.utils.DateUtil;
+
 /**
  * @author camilo
  *
@@ -127,6 +129,7 @@ public class ContaServiceImpl implements Serializable, IContaService {
 	 * @param date a data
 	 * @return data com valores de hora, minuto, segundo, e 
 	 * milisegundo minimos
+	 * @deprecated use {@link DateUtil#minimizeDate(Date)}
 	 */
 	Date minimizeDate(Date date) {
 		Calendar c = Calendar.getInstance();
@@ -147,6 +150,7 @@ public class ContaServiceImpl implements Serializable, IContaService {
 	 * @param date a data
 	 * @return data com valores de hora, minuto, segundo, e 
 	 * milisegundo minimos
+	 * @deprecated use {@link DateUtil#maximizeDate(Date)}
 	 */
 	Date maximizeDate(Date date) {
 		Calendar c = Calendar.getInstance();

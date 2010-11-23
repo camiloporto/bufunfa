@@ -21,6 +21,7 @@ public class SistemaContaIntegrationTest {
 	public SistemaContaIntegrationTest() {
 		
 	}
+	
     @Test
     public void testGetSaldoOperacional() {
     	sistemaContaService.addSistemaConta("SistemaConta");
@@ -58,11 +59,10 @@ public class SistemaContaIntegrationTest {
 				TestUtils.createDate(2010, 1, 30));
 		saldoOperacionalEsperado = new BigDecimal("593.00");
 		
-		//FIXME Corrigir teste: implementar saldo operacional por periodo: efetuar consuta semelhante ao extrato somando os lancamentos de cada conta e etc..
 		Assert.assertEquals(saldoOperacionalEsperado, saldoOperacional);
     }
     
-    private void adicionaAlgumasReceitas(Conta receita) {
+    static void adicionaAlgumasReceitas(Conta receita) {
     	Lancamento l1 = TestUtils.createLancamento(
 				20.0, 
 				TestUtils.createDate(2010, 1, 5),
@@ -90,7 +90,7 @@ public class SistemaContaIntegrationTest {
      * Adiciona 3 despesas
      * @param despesa conta de despesas
      */
-	private void adicionaAlgumasDespesas(Conta despesa) {
+	static void adicionaAlgumasDespesas(Conta despesa) {
 		Lancamento l1 = TestUtils.createLancamento(
 				-55.0, 
 				TestUtils.createDate(2010, 1, 5),
