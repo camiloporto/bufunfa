@@ -39,5 +39,15 @@ public interface ISistemaContaService {
 	 * @return saldo operacional ateh a data informada
 	 */
 	public BigDecimal getSaldoOperacional(Long idSistemaConta, Date referenceDate);
+	
+	/**
+	 * Retorna um relatorio de saldo operacional de caixa
+	 * de um determinado periodo
+	 * @param idSistemaConta id do sistema de contas
+	 * @param inicio inicio do periodo
+	 * @param fim final do periodo
+	 * @return saldo operacional de caixa do periodo
+	 */
+	public RelatorioSaldoCaixa getSaldoOperacionalCaixa(Long idSistemaConta, Date inicio, Date fim);
 
 }

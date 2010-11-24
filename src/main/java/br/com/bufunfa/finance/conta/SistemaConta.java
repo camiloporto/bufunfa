@@ -13,6 +13,8 @@ import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.serializable.RooSerializable;
 import org.springframework.roo.addon.tostring.RooToString;
 
+import br.com.bufunfa.finance.utils.DateUtil;
+
 /**
  * Essa classe representa um sistema de contas.
  * Um sistema de contas eh uma hierarquia de contas
@@ -98,4 +100,26 @@ public class SistemaConta {
     Conta getRoot() {
     	return Conta.findConta(idContaRoot);
     }
+
+    /**
+     * Retorna o saldo operacional de caixa de
+     * um periodo
+     * @param beginDate inicio do periodo
+     * @param endDate final do periodo
+     * @return relatorio de saldo operacional de caixa
+     */
+	public RelatorioSaldoCaixa getSaldoOperacionalDeCaixa(Date beginDate,
+			Date endDate) {
+		
+		//FIXME validar entradas
+		Date dataAnterior = DateUtil.getDiaAnterior(beginDate);
+		
+		dataAnterior = DateUtil.maximizeDate(dataAnterior);
+		
+		BigDecimal saldoAnterior = getSaldoOperacional(dataAnterior);
+		
+		BigDecimal saldoOperacionalDoPeriodo = getSaldoOperacional(beginDate, endDate);
+		
+		return new RelatorioSaldoCaixa(beginDate, endDate, saldoAnterior, saldoOperacionalDoPeriodo);
+	}
 }
