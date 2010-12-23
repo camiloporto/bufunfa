@@ -30,7 +30,12 @@ public class SistemaContaServiceImpl implements ISistemaContaService,
 	 * @see br.com.bufunfa.finance.conta.ISistemaContaService#getSaldoOperacionalCaixa(java.lang.Long, java.util.Date, java.util.Date)
 	 */
 	public RelatorioSaldoCaixa getSaldoOperacionalCaixa(Long idSistemaConta, Date inicio, Date fim) {
-		return null; //FIXME Implementar saldo de caixa
+		//FIXME Validar entradas (id do sistema, se o sistema existe, intervalo de datas etc..
+		SistemaConta sistema = SistemaConta.findSistemaConta(idSistemaConta);
+		if(sistema != null) {
+			return sistema.getSaldoOperacionalDeCaixa(inicio, fim);
+		}
+		return null;//FIXME tratar validacao se nao achar o sistema. lancar erro
 	}
 	
 	/*

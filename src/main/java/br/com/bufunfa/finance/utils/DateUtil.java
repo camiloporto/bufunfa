@@ -15,6 +15,17 @@ import java.util.Date;
  */
 public class DateUtil {
 	
+	public final static Date MINIMUM_DATE;
+	
+	
+	static {
+		Calendar c = Calendar.getInstance();
+		c.set(Calendar.DAY_OF_MONTH, c.getMinimum(Calendar.DAY_OF_MONTH));
+		c.set(Calendar.MONTH, c.getMinimum(Calendar.MONTH));
+		c.set(Calendar.YEAR, c.getMinimum(Calendar.YEAR));
+		MINIMUM_DATE = c.getTime();
+	}
+	
 	/**
 	 * Retorna a data informada subtraida de 1 dia
 	 * @param date a data
@@ -69,6 +80,13 @@ public class DateUtil {
 		return c.getTime();
 	}
 	
+	/**
+	 * Verifica se duas datas sao iguais, 
+	 * comparando apenas os atributos dia mes e ano
+	 * @param d1
+	 * @param d2
+	 * @return
+	 */
 	public static boolean isDayMonthYearEqual(Date d1, Date d2) {
 		Calendar c1 = Calendar.getInstance();
 		c1.setTime(d1);

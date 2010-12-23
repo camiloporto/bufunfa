@@ -81,3 +81,12 @@ finder add --finderName findLancamentoesByDataEfetivacaoBetween --class ~conta.L
 // Spring Roo 1.1.0.M1 [rev 3a0b8a3] log opened at 2010-10-26 20:51:49
 // Spring Roo 1.1.0.M1 [rev 3a0b8a3] log opened at 2010-10-27 18:17:52
 // Spring Roo 1.1.0.M1 [rev 3a0b8a3] log opened at 2010-11-04 21:32:07
+// Spring Roo 1.1.0.M1 [rev 3a0b8a3] log opened at 2010-11-18 20:38:16
+entity --class br.com.bufunfa.finance.conta.SistemaConta --testAutomatically --serializable
+field number --fieldName idContaRoot --type java.lang.Long --notNull
+field string --fieldName nome --notNull 
+// Spring Roo 1.1.0.M1 [rev 3a0b8a3] log opened at 2010-11-22 21:35:29
+// Spring Roo 1.1.0.M1 [rev 3a0b8a3] log opened at 2010-11-23 20:36:58
+// Spring Roo 1.1.0.M1 [rev 3a0b8a3] log opened at 2010-11-23 20:43:17
+// Spring Roo 1.1.0.M1 [rev 3a0b8a3] log opened at 2010-12-07 22:33:22
+// Spring Roo 1.1.0.M1 [rev 3a0b8a3] log opened at 2010-12-22 20:28:45

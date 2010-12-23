@@ -16,6 +16,7 @@ import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import br.com.bufunfa.finance.utils.DateUtil;
 import br.com.bufunfa.finance.utils.TestUtils;
 
 /**
@@ -32,6 +33,53 @@ public class SistemaContaServiceTest {
 	public SistemaContaServiceTest() {
 		
 	}
+	
+	@Test
+    public void testGetSaldoOperacionalDeCaixa() {
+    	sistemaContaService.addSistemaConta("SistemaConta");
+    	List<SistemaConta> lista = SistemaConta.findAllSistemaContas();
+		Assert.assertNotNull(lista);
+		Assert.assertTrue(lista.size() > 0);
+		
+		SistemaConta novo = null;
+		for (SistemaConta sistemaConta : lista) {
+			if("SistemaConta".equals(sistemaConta.getNome())) {
+				novo = sistemaConta;
+			}
+		}
+		
+		Assert.assertNotNull(novo);
+		Assert.assertNotNull(novo.getId());
+		Assert.assertNotNull(novo.getIdContaRoot());
+		
+		Conta despesa = novo.getContaDespesa();
+		Conta receita = novo.getContaReceita();
+		
+		
+		SistemaContaIntegrationTest.adicionaAlgumasDespesas(despesa);
+		SistemaContaIntegrationTest.adicionaAlgumasReceitas(receita);
+		
+		
+		/*
+		 * retorna o saldo operacional de caixa entre 10/1/2010 e 30/1/2010
+		 */
+		RelatorioSaldoCaixa relatorioSaldoCaixa = sistemaContaService.getSaldoOperacionalCaixa(
+				novo.getId(),
+				TestUtils.createDate(2010, 1, 10), 
+				TestUtils.createDate(2010, 1, 15));
+		
+		RelatorioSaldoCaixa relatorioEsperado = new RelatorioSaldoCaixa(
+				TestUtils.createDate(2010, 1, 10), 
+				TestUtils.createDate(2010, 1, 15), 
+				new BigDecimal("-35.00"), 
+				new BigDecimal("593.00"));
+		
+		Assert.assertTrue(DateUtil.isDayMonthYearEqual(relatorioEsperado.getFimPeriodo(), relatorioSaldoCaixa.getFimPeriodo()));
+		Assert.assertTrue(DateUtil.isDayMonthYearEqual(relatorioEsperado.getInicioPeriodo(), relatorioSaldoCaixa.getInicioPeriodo()));
+		Assert.assertEquals(relatorioEsperado.getSaldoAnterior(), relatorioSaldoCaixa.getSaldoAnterior());
+		Assert.assertEquals(relatorioEsperado.getSaldoOperacionalDoPeriodo(), relatorioSaldoCaixa.getSaldoOperacionalDoPeriodo());
+		Assert.assertEquals(relatorioEsperado.getSaldoPosterior(), relatorioSaldoCaixa.getSaldoPosterior());
+    }
 	
 	@Test
     public void testGetSaldoOperacional() {

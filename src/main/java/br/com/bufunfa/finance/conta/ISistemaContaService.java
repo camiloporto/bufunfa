@@ -49,5 +49,7 @@ public interface ISistemaContaService {
 	 * @return saldo operacional de caixa do periodo
 	 */
 	public RelatorioSaldoCaixa getSaldoOperacionalCaixa(Long idSistemaConta, Date inicio, Date fim);
+	
+	//FIXME Adicionar metodo de balanco patrimonial e teste servico
 
 }

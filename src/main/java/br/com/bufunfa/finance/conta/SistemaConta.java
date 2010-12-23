@@ -46,6 +46,8 @@ public class SistemaConta {
     private String nome;
     //FIXME Detalhes do sistema de contas deverah ficar em um Perfil?
     
+    //FIXME refatorar calculos de saldo operacional e balanco.. fazer um metodo que faca operacoes basica entre quaisquer conta (somar, subtrai, etc..)
+    
     /**
      * Retorna o saldo operacional das receitas e despesas
      * em determinado periodo
@@ -63,6 +65,24 @@ public class SistemaConta {
     	BigDecimal saldoDespesa = getContaDespesa().getSaldo(dataReferencia);
     	
     	return saldoReceita.add(saldoDespesa).setScale(2, RoundingMode.HALF_EVEN);
+    }
+    
+    /**
+     * Retorna a conta de passivos do Sistema
+     * de contas
+     * @return
+     */
+    Conta getContaPassivo() {
+    	return getChildrenByNome(Conta.NOME_PASSIVO);
+    }
+    
+    /**
+     * Retorna a conta de ativos do Sistema
+     * de contas
+     * @return
+     */
+    Conta getContaAtivo() {
+    	return getChildrenByNome(Conta.NOME_ATIVO);
     }
     
     /**
@@ -121,5 +141,30 @@ public class SistemaConta {
 		BigDecimal saldoOperacionalDoPeriodo = getSaldoOperacional(beginDate, endDate);
 		
 		return new RelatorioSaldoCaixa(beginDate, endDate, saldoAnterior, saldoOperacionalDoPeriodo);
+	}
+
+	/**
+	 * Retorna o balanco patrimonial do sistema 
+	 * de contas em determinado periodo de tempo
+	 * @param inicio inicio do periodo (opcional)
+	 * @param fim final do periodo (obrigatorio)
+	 * @return balanco patrimonial
+	 */
+	BalancoPatrimonial getBalancoPatrimonial(Date inicio,
+			Date fim) {
+		Date fakeInicio = null;
+		BigDecimal saldoAtivo = null;
+		BigDecimal saldoPassivo = null;
+		if(inicio == null) {
+			fakeInicio = DateUtil.MINIMUM_DATE;
+			saldoAtivo = getContaAtivo().getSomaLancamentos(fakeInicio, fim);
+			saldoPassivo = getContaPassivo().getSomaLancamentos(fakeInicio, fim);
+			return new BalancoPatrimonial(saldoAtivo, saldoPassivo, inicio, fim);
+		}
+		
+		saldoAtivo = getContaAtivo().getSomaLancamentos(inicio, fim);
+    	saldoPassivo = getContaPassivo().getSomaLancamentos(inicio, fim);
+    	
+    	return new BalancoPatrimonial(saldoAtivo, saldoPassivo, inicio, fim);
 	}
 }

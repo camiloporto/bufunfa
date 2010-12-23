@@ -6,6 +6,6 @@ privileged aspect RelatorioSaldoCaixa_Roo_Serializable {
     
     declare parents: RelatorioSaldoCaixa implements Serializable;
     
-    private static final long RelatorioSaldoCaixa.serialVersionUID = 6419514958581749741L;
+    private static final long RelatorioSaldoCaixa.serialVersionUID = -7653484492832216575L;
     
 }
