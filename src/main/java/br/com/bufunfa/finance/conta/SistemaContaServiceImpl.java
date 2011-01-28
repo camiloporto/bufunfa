@@ -25,6 +25,17 @@ public class SistemaContaServiceImpl implements ISistemaContaService,
 	 */
 	private static final long serialVersionUID = 4660537375580065860L;
 	
+	public BalancoPatrimonial getBalancoPatrimonial(Long idSistemaConta,
+			Date inicio, Date fim) {
+		
+		//FIXME validar entradas
+		SistemaConta sistema = SistemaConta.findSistemaConta(idSistemaConta);
+		if(sistema != null) {
+			return sistema.getBalancoPatrimonial(inicio, fim);
+		}
+		return null;//FIXME tratar validacao se nao achar o sistema. lancar erro
+	}
+	
 	/*
 	 * (non-Javadoc)
 	 * @see br.com.bufunfa.finance.conta.ISistemaContaService#getSaldoOperacionalCaixa(java.lang.Long, java.util.Date, java.util.Date)

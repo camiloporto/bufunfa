@@ -22679,3 +22679,475 @@ org.datanucleus.metadata.InvalidMetaDataException: Class br.com.bufunfa.finance.
 21:32:05,077 (main) INFO  [DataNucleus.Enhancer] - Class "br.com.bufunfa.finance.conta.Lancamento" is already enhanced.
 21:32:05,126 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Development/github/bufunfa/Finance/target/classes/br/com/bufunfa/finance/conta/SistemaConta.class" with enhanced definition
 21:32:05,127 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 3 classes. Timings : input=645 ms, enhance=98 ms, total=743 ms. Consult the log for full details
+20:35:18,594 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:35:19,118 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:35:19,118 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:35:19,328 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:35:19,574 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.BalancoPatrimonial" has no MetaData or annotations.
+20:35:19,577 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.BalancoPatrimonial_Roo_JavaBean" has no MetaData or annotations.
+20:35:19,590 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.BalancoPatrimonial_Roo_Serializable" has no MetaData or annotations.
+20:35:19,591 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.BalancoPatrimonial_Roo_ToString" has no MetaData or annotations.
+20:35:19,783 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta" has been specified with JPA annotations so using those.
+20:35:19,986 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaPresenter" has no MetaData or annotations.
+20:35:19,987 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaPresenterListener" has no MetaData or annotations.
+20:35:20,000 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceImpl" has no MetaData or annotations.
+20:35:20,001 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceParams" has no MetaData or annotations.
+20:35:20,002 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceParams_Roo_JavaBean" has no MetaData or annotations.
+20:35:20,003 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceParams_Roo_Serializable" has no MetaData or annotations.
+20:35:20,003 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceParams_Roo_ToString" has no MetaData or annotations.
+20:35:20,004 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_Configurable" has no MetaData or annotations.
+20:35:20,005 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_Entity" has no MetaData or annotations.
+20:35:20,006 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_Finder" has no MetaData or annotations.
+20:35:20,013 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_JavaBean" has no MetaData or annotations.
+20:35:20,014 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_Serializable" has no MetaData or annotations.
+20:35:20,015 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_ToString" has no MetaData or annotations.
+20:35:20,016 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Extrato" has no MetaData or annotations.
+20:35:20,026 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Extrato_Roo_Serializable" has no MetaData or annotations.
+20:35:20,026 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.IContaService" has no MetaData or annotations.
+20:35:20,026 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ISistemaContaService" has no MetaData or annotations.
+20:35:20,027 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento" has been specified with JPA annotations so using those.
+20:35:20,037 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_Configurable" has no MetaData or annotations.
+20:35:20,039 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_Entity" has no MetaData or annotations.
+20:35:20,039 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_Finder" has no MetaData or annotations.
+20:35:20,040 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_JavaBean" has no MetaData or annotations.
+20:35:20,041 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_Serializable" has no MetaData or annotations.
+20:35:20,042 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_ToString" has no MetaData or annotations.
+20:35:20,055 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.RelatorioSaldoCaixa" has no MetaData or annotations.
+20:35:20,056 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.RelatorioSaldoCaixa_Roo_JavaBean" has no MetaData or annotations.
+20:35:20,057 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.RelatorioSaldoCaixa_Roo_Serializable" has no MetaData or annotations.
+20:35:20,057 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.RelatorioSaldoCaixa_Roo_ToString" has no MetaData or annotations.
+20:35:20,058 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta" has been specified with JPA annotations so using those.
+20:35:20,064 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaServiceImpl" has no MetaData or annotations.
+20:35:20,064 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_Configurable" has no MetaData or annotations.
+20:35:20,065 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_Entity" has no MetaData or annotations.
+20:35:20,066 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_JavaBean" has no MetaData or annotations.
+20:35:20,067 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_Serializable" has no MetaData or annotations.
+20:35:20,068 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_ToString" has no MetaData or annotations.
+20:35:20,085 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEvent$EventType" has no MetaData or annotations.
+20:35:20,086 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEvent" has no MetaData or annotations.
+20:35:20,090 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEventCallback" has no MetaData or annotations.
+20:35:20,090 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEventCallback_Roo_JavaBean" has no MetaData or annotations.
+20:35:20,091 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEventUILoaded" has no MetaData or annotations.
+20:35:20,092 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEventUILoaded_Roo_JavaBean" has no MetaData or annotations.
+20:35:20,093 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEvent_Roo_JavaBean" has no MetaData or annotations.
+20:35:20,098 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEvent_Roo_ToString" has no MetaData or annotations.
+20:35:20,099 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.utils.DateUtil" has no MetaData or annotations.
+20:35:20,100 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+20:35:20,117 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+20:35:20,118 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+20:35:20,120 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.conta.UIConta" has no MetaData or annotations.
+20:35:20,121 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.conta.UIConta_Roo_JavaBean" has no MetaData or annotations.
+20:35:20,126 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.conta.UIConta_Roo_Serializable" has no MetaData or annotations.
+20:35:20,126 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.conta.UiContaListener" has no MetaData or annotations.
+20:35:20,129 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$BooleanWebContextInitParameter" has no MetaData or annotations.
+20:35:20,130 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$DisableUnicodeEscaping" has no MetaData or annotations.
+20:35:20,130 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebContextInitParameter" has no MetaData or annotations.
+20:35:20,131 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebEnvironmentEntry" has no MetaData or annotations.
+20:35:20,132 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration" has no MetaData or annotations.
+20:35:20,145 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaDataOnDemand" has no MetaData or annotations.
+20:35:20,150 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:35:20,151 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:35:20,173 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaIntegrationTest" has no MetaData or annotations.
+20:35:20,178 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:35:20,179 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:35:20,180 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceIntegrationTest" has no MetaData or annotations.
+20:35:20,194 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ExtratoTest" has no MetaData or annotations.
+20:35:20,195 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoDataOnDemand" has no MetaData or annotations.
+20:35:20,196 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:35:20,196 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:35:20,206 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoIntegrationTest" has no MetaData or annotations.
+20:35:20,207 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:35:20,207 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:35:20,208 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaDataOnDemand" has no MetaData or annotations.
+20:35:20,217 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:35:20,218 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:35:20,220 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaIntegrationTest" has no MetaData or annotations.
+20:35:20,220 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:35:20,226 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:35:20,227 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaServiceTest" has no MetaData or annotations.
+20:35:20,227 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.utils.TestUtils" has no MetaData or annotations.
+20:35:20,228 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIContaTest" has no MetaData or annotations.
+20:35:20,464 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Development/github/bufunfa/Finance/target/classes/br/com/bufunfa/finance/conta/Conta.class" with enhanced definition
+20:35:20,515 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Development/github/bufunfa/Finance/target/classes/br/com/bufunfa/finance/conta/Lancamento.class" with enhanced definition
+20:35:20,543 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Development/github/bufunfa/Finance/target/classes/br/com/bufunfa/finance/conta/SistemaConta.class" with enhanced definition
+20:35:20,544 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 3 classes. Timings : input=910 ms, enhance=296 ms, total=1206 ms. Consult the log for full details
+20:35:43,831 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:35:44,197 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:35:44,197 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:35:44,292 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:35:44,566 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.BalancoPatrimonial" has no MetaData or annotations.
+20:35:44,601 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.BalancoPatrimonial_Roo_JavaBean" has no MetaData or annotations.
+20:35:44,603 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.BalancoPatrimonial_Roo_Serializable" has no MetaData or annotations.
+20:35:44,604 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.BalancoPatrimonial_Roo_ToString" has no MetaData or annotations.
+20:35:44,764 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta" has been specified with JPA annotations so using those.
+20:35:44,836 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaPresenter" has no MetaData or annotations.
+20:35:44,836 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaPresenterListener" has no MetaData or annotations.
+20:35:44,848 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceImpl" has no MetaData or annotations.
+20:35:44,848 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceParams" has no MetaData or annotations.
+20:35:44,857 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceParams_Roo_JavaBean" has no MetaData or annotations.
+20:35:44,858 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceParams_Roo_Serializable" has no MetaData or annotations.
+20:35:44,859 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceParams_Roo_ToString" has no MetaData or annotations.
+20:35:44,859 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_Configurable" has no MetaData or annotations.
+20:35:44,860 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_Entity" has no MetaData or annotations.
+20:35:44,869 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_Finder" has no MetaData or annotations.
+20:35:44,870 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_JavaBean" has no MetaData or annotations.
+20:35:44,871 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_Serializable" has no MetaData or annotations.
+20:35:44,872 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_ToString" has no MetaData or annotations.
+20:35:44,873 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Extrato" has no MetaData or annotations.
+20:35:44,881 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Extrato_Roo_Serializable" has no MetaData or annotations.
+20:35:44,882 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.IContaService" has no MetaData or annotations.
+20:35:44,882 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ISistemaContaService" has no MetaData or annotations.
+20:35:44,882 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento" has been specified with JPA annotations so using those.
+20:35:44,908 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_Configurable" has no MetaData or annotations.
+20:35:44,910 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_Entity" has no MetaData or annotations.
+20:35:44,910 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_Finder" has no MetaData or annotations.
+20:35:44,911 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_JavaBean" has no MetaData or annotations.
+20:35:44,929 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_Serializable" has no MetaData or annotations.
+20:35:44,930 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_ToString" has no MetaData or annotations.
+20:35:44,931 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.RelatorioSaldoCaixa" has no MetaData or annotations.
+20:35:44,932 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.RelatorioSaldoCaixa_Roo_JavaBean" has no MetaData or annotations.
+20:35:44,933 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.RelatorioSaldoCaixa_Roo_Serializable" has no MetaData or annotations.
+20:35:44,943 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.RelatorioSaldoCaixa_Roo_ToString" has no MetaData or annotations.
+20:35:44,944 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta" has been specified with JPA annotations so using those.
+20:35:44,945 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaServiceImpl" has no MetaData or annotations.
+20:35:44,946 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_Configurable" has no MetaData or annotations.
+20:35:44,947 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_Entity" has no MetaData or annotations.
+20:35:44,948 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_JavaBean" has no MetaData or annotations.
+20:35:44,949 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_Serializable" has no MetaData or annotations.
+20:35:44,962 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_ToString" has no MetaData or annotations.
+20:35:44,964 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEvent$EventType" has no MetaData or annotations.
+20:35:44,965 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEvent" has no MetaData or annotations.
+20:35:44,989 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEventCallback" has no MetaData or annotations.
+20:35:44,990 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEventCallback_Roo_JavaBean" has no MetaData or annotations.
+20:35:44,990 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEventUILoaded" has no MetaData or annotations.
+20:35:44,991 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEventUILoaded_Roo_JavaBean" has no MetaData or annotations.
+20:35:44,992 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEvent_Roo_JavaBean" has no MetaData or annotations.
+20:35:45,015 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEvent_Roo_ToString" has no MetaData or annotations.
+20:35:45,017 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.utils.DateUtil" has no MetaData or annotations.
+20:35:45,021 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+20:35:45,022 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+20:35:45,023 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+20:35:45,024 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.conta.UIConta" has no MetaData or annotations.
+20:35:45,043 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.conta.UIConta_Roo_JavaBean" has no MetaData or annotations.
+20:35:45,045 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.conta.UIConta_Roo_Serializable" has no MetaData or annotations.
+20:35:45,045 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.conta.UiContaListener" has no MetaData or annotations.
+20:35:45,054 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$BooleanWebContextInitParameter" has no MetaData or annotations.
+20:35:45,055 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$DisableUnicodeEscaping" has no MetaData or annotations.
+20:35:45,056 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebContextInitParameter" has no MetaData or annotations.
+20:35:45,057 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebEnvironmentEntry" has no MetaData or annotations.
+20:35:45,073 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration" has no MetaData or annotations.
+20:35:45,091 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaDataOnDemand" has no MetaData or annotations.
+20:35:45,097 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:35:45,098 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:35:45,118 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaIntegrationTest" has no MetaData or annotations.
+20:35:45,119 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:35:45,120 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:35:45,121 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceIntegrationTest" has no MetaData or annotations.
+20:35:45,122 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ExtratoTest" has no MetaData or annotations.
+20:35:45,123 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoDataOnDemand" has no MetaData or annotations.
+20:35:45,123 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:35:45,124 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:35:45,129 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoIntegrationTest" has no MetaData or annotations.
+20:35:45,130 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:35:45,131 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:35:45,135 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaDataOnDemand" has no MetaData or annotations.
+20:35:45,136 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:35:45,136 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:35:45,138 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaIntegrationTest" has no MetaData or annotations.
+20:35:45,138 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:35:45,139 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:35:45,140 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaServiceTest" has no MetaData or annotations.
+20:35:45,141 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.utils.TestUtils" has no MetaData or annotations.
+20:35:45,150 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIContaTest" has no MetaData or annotations.
+20:35:45,151 (main) ERROR [DataNucleus.MetaData] - Class br.com.bufunfa.finance.conta.Conta has application-identity and no objectid-class specified yet has 0 primary key fields. Unable to use SingleFieldIdentity.
+20:35:45,154 (main) ERROR [DataNucleus.Enhancer] - DataNucleus Enhancer completed with an error. Please review the enhancer log for full details. Some classes may have been enhanced but some caused errors
+Class br.com.bufunfa.finance.conta.Conta has application-identity and no objectid-class specified yet has 0 primary key fields. Unable to use SingleFieldIdentity.
+org.datanucleus.metadata.InvalidMetaDataException: Class br.com.bufunfa.finance.conta.Conta has application-identity and no objectid-class specified yet has 0 primary key fields. Unable to use SingleFieldIdentity.
+	at org.datanucleus.metadata.AbstractClassMetaData.determineObjectIdClass(AbstractClassMetaData.java:1032)
+	at org.datanucleus.metadata.ClassMetaData.populate(ClassMetaData.java:205)
+	at org.datanucleus.metadata.MetaDataManager$1.run(MetaDataManager.java:2322)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.datanucleus.metadata.MetaDataManager.populateAbstractClassMetaData(MetaDataManager.java:2316)
+	at org.datanucleus.metadata.MetaDataManager.populateFileMetaData(MetaDataManager.java:2153)
+	at org.datanucleus.metadata.MetaDataManager.initialiseFileMetaDataForUse(MetaDataManager.java:864)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:433)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:743)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:545)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1252)
+20:35:45,159 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed and no classes were enhanced. Consult the log for full details
+20:36:03,747 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:36:04,153 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:36:04,153 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:36:04,222 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:36:04,361 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.BalancoPatrimonial" has no MetaData or annotations.
+20:36:04,371 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.BalancoPatrimonial_Roo_JavaBean" has no MetaData or annotations.
+20:36:04,372 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.BalancoPatrimonial_Roo_Serializable" has no MetaData or annotations.
+20:36:04,380 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.BalancoPatrimonial_Roo_ToString" has no MetaData or annotations.
+20:36:04,554 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta" has been specified with JPA annotations so using those.
+20:36:04,691 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaPresenter" has no MetaData or annotations.
+20:36:04,691 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaPresenterListener" has no MetaData or annotations.
+20:36:04,699 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceImpl" has no MetaData or annotations.
+20:36:04,700 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceParams" has no MetaData or annotations.
+20:36:04,700 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceParams_Roo_JavaBean" has no MetaData or annotations.
+20:36:04,709 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceParams_Roo_Serializable" has no MetaData or annotations.
+20:36:04,710 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceParams_Roo_ToString" has no MetaData or annotations.
+20:36:04,711 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_Configurable" has no MetaData or annotations.
+20:36:04,712 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_Entity" has no MetaData or annotations.
+20:36:04,713 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_Finder" has no MetaData or annotations.
+20:36:04,714 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_JavaBean" has no MetaData or annotations.
+20:36:04,714 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_Serializable" has no MetaData or annotations.
+20:36:04,715 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_ToString" has no MetaData or annotations.
+20:36:04,716 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Extrato" has no MetaData or annotations.
+20:36:04,717 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Extrato_Roo_Serializable" has no MetaData or annotations.
+20:36:04,717 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.IContaService" has no MetaData or annotations.
+20:36:04,717 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ISistemaContaService" has no MetaData or annotations.
+20:36:04,723 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento" has been specified with JPA annotations so using those.
+20:36:04,731 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_Configurable" has no MetaData or annotations.
+20:36:04,732 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_Entity" has no MetaData or annotations.
+20:36:04,749 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_Finder" has no MetaData or annotations.
+20:36:04,750 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_JavaBean" has no MetaData or annotations.
+20:36:04,751 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_Serializable" has no MetaData or annotations.
+20:36:04,752 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_ToString" has no MetaData or annotations.
+20:36:04,753 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.RelatorioSaldoCaixa" has no MetaData or annotations.
+20:36:04,762 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.RelatorioSaldoCaixa_Roo_JavaBean" has no MetaData or annotations.
+20:36:04,763 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.RelatorioSaldoCaixa_Roo_Serializable" has no MetaData or annotations.
+20:36:04,764 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.RelatorioSaldoCaixa_Roo_ToString" has no MetaData or annotations.
+20:36:04,764 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta" has been specified with JPA annotations so using those.
+20:36:04,775 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaServiceImpl" has no MetaData or annotations.
+20:36:04,776 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_Configurable" has no MetaData or annotations.
+20:36:04,785 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_Entity" has no MetaData or annotations.
+20:36:04,786 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_JavaBean" has no MetaData or annotations.
+20:36:04,787 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_Serializable" has no MetaData or annotations.
+20:36:04,798 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_ToString" has no MetaData or annotations.
+20:36:04,799 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEvent$EventType" has no MetaData or annotations.
+20:36:04,800 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEvent" has no MetaData or annotations.
+20:36:04,806 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEventCallback" has no MetaData or annotations.
+20:36:04,807 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEventCallback_Roo_JavaBean" has no MetaData or annotations.
+20:36:04,807 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEventUILoaded" has no MetaData or annotations.
+20:36:04,808 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEventUILoaded_Roo_JavaBean" has no MetaData or annotations.
+20:36:04,810 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEvent_Roo_JavaBean" has no MetaData or annotations.
+20:36:04,813 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEvent_Roo_ToString" has no MetaData or annotations.
+20:36:04,814 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.utils.DateUtil" has no MetaData or annotations.
+20:36:04,815 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+20:36:04,816 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+20:36:04,817 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+20:36:04,839 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.conta.UIConta" has no MetaData or annotations.
+20:36:04,840 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.conta.UIConta_Roo_JavaBean" has no MetaData or annotations.
+20:36:04,841 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.conta.UIConta_Roo_Serializable" has no MetaData or annotations.
+20:36:04,841 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.conta.UiContaListener" has no MetaData or annotations.
+20:36:04,844 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$BooleanWebContextInitParameter" has no MetaData or annotations.
+20:36:04,845 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$DisableUnicodeEscaping" has no MetaData or annotations.
+20:36:04,858 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebContextInitParameter" has no MetaData or annotations.
+20:36:04,859 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebEnvironmentEntry" has no MetaData or annotations.
+20:36:04,860 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration" has no MetaData or annotations.
+20:36:04,861 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaDataOnDemand" has no MetaData or annotations.
+20:36:04,864 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:36:04,865 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:36:04,898 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaIntegrationTest" has no MetaData or annotations.
+20:36:04,899 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:36:04,900 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:36:04,905 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceIntegrationTest" has no MetaData or annotations.
+20:36:04,906 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ExtratoTest" has no MetaData or annotations.
+20:36:04,907 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoDataOnDemand" has no MetaData or annotations.
+20:36:04,908 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:36:04,909 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:36:04,918 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoIntegrationTest" has no MetaData or annotations.
+20:36:04,919 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:36:04,920 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:36:04,921 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaDataOnDemand" has no MetaData or annotations.
+20:36:04,930 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:36:04,939 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:36:04,941 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaIntegrationTest" has no MetaData or annotations.
+20:36:04,942 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:36:04,943 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:36:04,944 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaServiceTest" has no MetaData or annotations.
+20:36:04,952 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.utils.TestUtils" has no MetaData or annotations.
+20:36:04,961 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIContaTest" has no MetaData or annotations.
+20:36:05,133 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Development/github/bufunfa/Finance/target/classes/br/com/bufunfa/finance/conta/Conta.class" with enhanced definition
+20:36:05,178 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Development/github/bufunfa/Finance/target/classes/br/com/bufunfa/finance/conta/Lancamento.class" with enhanced definition
+20:36:05,203 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Development/github/bufunfa/Finance/target/classes/br/com/bufunfa/finance/conta/SistemaConta.class" with enhanced definition
+20:36:05,203 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 3 classes. Timings : input=749 ms, enhance=227 ms, total=976 ms. Consult the log for full details
+20:36:07,229 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+20:36:07,495 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+20:36:07,495 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+20:36:07,549 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+20:36:07,627 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.BalancoPatrimonial" has no MetaData or annotations.
+20:36:07,637 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.BalancoPatrimonial_Roo_JavaBean" has no MetaData or annotations.
+20:36:07,638 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.BalancoPatrimonial_Roo_Serializable" has no MetaData or annotations.
+20:36:07,639 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.BalancoPatrimonial_Roo_ToString" has no MetaData or annotations.
+20:36:07,723 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta" has been specified with JPA annotations so using those.
+20:36:07,787 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaPresenter" has no MetaData or annotations.
+20:36:07,788 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaPresenterListener" has no MetaData or annotations.
+20:36:07,791 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceImpl" has no MetaData or annotations.
+20:36:07,791 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceParams" has no MetaData or annotations.
+20:36:07,792 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceParams_Roo_JavaBean" has no MetaData or annotations.
+20:36:07,793 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceParams_Roo_Serializable" has no MetaData or annotations.
+20:36:07,794 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceParams_Roo_ToString" has no MetaData or annotations.
+20:36:07,795 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_Configurable" has no MetaData or annotations.
+20:36:07,796 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_Entity" has no MetaData or annotations.
+20:36:07,797 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_Finder" has no MetaData or annotations.
+20:36:07,798 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_JavaBean" has no MetaData or annotations.
+20:36:07,799 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_Serializable" has no MetaData or annotations.
+20:36:07,799 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_ToString" has no MetaData or annotations.
+20:36:07,800 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Extrato" has no MetaData or annotations.
+20:36:07,801 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Extrato_Roo_Serializable" has no MetaData or annotations.
+20:36:07,801 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.IContaService" has no MetaData or annotations.
+20:36:07,801 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ISistemaContaService" has no MetaData or annotations.
+20:36:07,802 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento" has been specified with JPA annotations so using those.
+20:36:07,810 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_Configurable" has no MetaData or annotations.
+20:36:07,811 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_Entity" has no MetaData or annotations.
+20:36:07,812 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_Finder" has no MetaData or annotations.
+20:36:07,813 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_JavaBean" has no MetaData or annotations.
+20:36:07,813 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_Serializable" has no MetaData or annotations.
+20:36:07,814 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_ToString" has no MetaData or annotations.
+20:36:07,815 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.RelatorioSaldoCaixa" has no MetaData or annotations.
+20:36:07,816 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.RelatorioSaldoCaixa_Roo_JavaBean" has no MetaData or annotations.
+20:36:07,817 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.RelatorioSaldoCaixa_Roo_Serializable" has no MetaData or annotations.
+20:36:07,818 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.RelatorioSaldoCaixa_Roo_ToString" has no MetaData or annotations.
+20:36:07,818 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta" has been specified with JPA annotations so using those.
+20:36:07,821 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaServiceImpl" has no MetaData or annotations.
+20:36:07,822 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_Configurable" has no MetaData or annotations.
+20:36:07,823 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_Entity" has no MetaData or annotations.
+20:36:07,824 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_JavaBean" has no MetaData or annotations.
+20:36:07,825 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_Serializable" has no MetaData or annotations.
+20:36:07,826 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_ToString" has no MetaData or annotations.
+20:36:07,827 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEvent$EventType" has no MetaData or annotations.
+20:36:07,828 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEvent" has no MetaData or annotations.
+20:36:07,830 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEventCallback" has no MetaData or annotations.
+20:36:07,830 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEventCallback_Roo_JavaBean" has no MetaData or annotations.
+20:36:07,831 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEventUILoaded" has no MetaData or annotations.
+20:36:07,832 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEventUILoaded_Roo_JavaBean" has no MetaData or annotations.
+20:36:07,833 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEvent_Roo_JavaBean" has no MetaData or annotations.
+20:36:07,835 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEvent_Roo_ToString" has no MetaData or annotations.
+20:36:07,837 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.utils.DateUtil" has no MetaData or annotations.
+20:36:07,838 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+20:36:07,839 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+20:36:07,839 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+20:36:07,841 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.conta.UIConta" has no MetaData or annotations.
+20:36:07,842 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.conta.UIConta_Roo_JavaBean" has no MetaData or annotations.
+20:36:07,843 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.conta.UIConta_Roo_Serializable" has no MetaData or annotations.
+20:36:07,843 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.conta.UiContaListener" has no MetaData or annotations.
+20:36:07,851 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$BooleanWebContextInitParameter" has no MetaData or annotations.
+20:36:07,854 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$DisableUnicodeEscaping" has no MetaData or annotations.
+20:36:07,856 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebContextInitParameter" has no MetaData or annotations.
+20:36:07,856 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebEnvironmentEntry" has no MetaData or annotations.
+20:36:07,857 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration" has no MetaData or annotations.
+20:36:07,858 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaDataOnDemand" has no MetaData or annotations.
+20:36:07,859 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:36:07,860 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:36:07,869 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaIntegrationTest" has no MetaData or annotations.
+20:36:07,870 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:36:07,871 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:36:07,872 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceIntegrationTest" has no MetaData or annotations.
+20:36:07,872 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ExtratoTest" has no MetaData or annotations.
+20:36:07,873 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoDataOnDemand" has no MetaData or annotations.
+20:36:07,874 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:36:07,875 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:36:07,876 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoIntegrationTest" has no MetaData or annotations.
+20:36:07,877 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:36:07,878 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:36:07,878 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaDataOnDemand" has no MetaData or annotations.
+20:36:07,879 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+20:36:07,880 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+20:36:07,881 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaIntegrationTest" has no MetaData or annotations.
+20:36:07,882 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+20:36:07,883 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+20:36:07,884 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaServiceTest" has no MetaData or annotations.
+20:36:07,884 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.utils.TestUtils" has no MetaData or annotations.
+20:36:07,885 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIContaTest" has no MetaData or annotations.
+20:36:07,972 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Development/github/bufunfa/Finance/target/classes/br/com/bufunfa/finance/conta/Conta.class" with enhanced definition
+20:36:07,993 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Development/github/bufunfa/Finance/target/classes/br/com/bufunfa/finance/conta/Lancamento.class" with enhanced definition
+20:36:08,000 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Development/github/bufunfa/Finance/target/classes/br/com/bufunfa/finance/conta/SistemaConta.class" with enhanced definition
+20:36:08,001 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 3 classes. Timings : input=336 ms, enhance=107 ms, total=443 ms. Consult the log for full details
+15:56:07,209 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+15:56:07,741 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.equinox.registry" but it cannot be resolved
+15:56:07,741 (main) INFO  [DataNucleus.Plugin] - Bundle "org.datanucleus" has an optional dependency to "org.eclipse.core.runtime" but it cannot be resolved
+15:56:07,892 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+15:56:08,096 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.BalancoPatrimonial" has no MetaData or annotations.
+15:56:08,106 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.BalancoPatrimonial_Roo_JavaBean" has no MetaData or annotations.
+15:56:08,108 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.BalancoPatrimonial_Roo_Serializable" has no MetaData or annotations.
+15:56:08,109 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.BalancoPatrimonial_Roo_ToString" has no MetaData or annotations.
+15:56:08,289 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta" has been specified with JPA annotations so using those.
+15:56:08,440 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaPresenter" has no MetaData or annotations.
+15:56:08,441 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaPresenterListener" has no MetaData or annotations.
+15:56:08,460 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceImpl" has no MetaData or annotations.
+15:56:08,461 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceParams" has no MetaData or annotations.
+15:56:08,461 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceParams_Roo_JavaBean" has no MetaData or annotations.
+15:56:08,462 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceParams_Roo_Serializable" has no MetaData or annotations.
+15:56:08,463 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceParams_Roo_ToString" has no MetaData or annotations.
+15:56:08,464 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_Configurable" has no MetaData or annotations.
+15:56:08,465 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_Entity" has no MetaData or annotations.
+15:56:08,466 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_Finder" has no MetaData or annotations.
+15:56:08,476 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_JavaBean" has no MetaData or annotations.
+15:56:08,477 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_Serializable" has no MetaData or annotations.
+15:56:08,478 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Conta_Roo_ToString" has no MetaData or annotations.
+15:56:08,479 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Extrato" has no MetaData or annotations.
+15:56:08,490 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Extrato_Roo_Serializable" has no MetaData or annotations.
+15:56:08,490 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.IContaService" has no MetaData or annotations.
+15:56:08,490 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ISistemaContaService" has no MetaData or annotations.
+15:56:08,491 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento" has been specified with JPA annotations so using those.
+15:56:08,507 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_Configurable" has no MetaData or annotations.
+15:56:08,508 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_Entity" has no MetaData or annotations.
+15:56:08,509 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_Finder" has no MetaData or annotations.
+15:56:08,511 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_JavaBean" has no MetaData or annotations.
+15:56:08,522 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_Serializable" has no MetaData or annotations.
+15:56:08,523 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.Lancamento_Roo_ToString" has no MetaData or annotations.
+15:56:08,524 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.RelatorioSaldoCaixa" has no MetaData or annotations.
+15:56:08,525 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.RelatorioSaldoCaixa_Roo_JavaBean" has no MetaData or annotations.
+15:56:08,525 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.RelatorioSaldoCaixa_Roo_Serializable" has no MetaData or annotations.
+15:56:08,526 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.RelatorioSaldoCaixa_Roo_ToString" has no MetaData or annotations.
+15:56:08,527 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta" has been specified with JPA annotations so using those.
+15:56:08,530 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaServiceImpl" has no MetaData or annotations.
+15:56:08,541 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_Configurable" has no MetaData or annotations.
+15:56:08,542 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_Entity" has no MetaData or annotations.
+15:56:08,543 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_JavaBean" has no MetaData or annotations.
+15:56:08,544 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_Serializable" has no MetaData or annotations.
+15:56:08,545 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaConta_Roo_ToString" has no MetaData or annotations.
+15:56:08,546 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEvent$EventType" has no MetaData or annotations.
+15:56:08,547 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEvent" has no MetaData or annotations.
+15:56:08,555 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEventCallback" has no MetaData or annotations.
+15:56:08,556 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEventCallback_Roo_JavaBean" has no MetaData or annotations.
+15:56:08,557 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEventUILoaded" has no MetaData or annotations.
+15:56:08,557 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEventUILoaded_Roo_JavaBean" has no MetaData or annotations.
+15:56:08,558 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEvent_Roo_JavaBean" has no MetaData or annotations.
+15:56:08,563 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.event.ContaEvent_Roo_ToString" has no MetaData or annotations.
+15:56:08,564 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.utils.DateUtil" has no MetaData or annotations.
+15:56:08,566 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain$Place" has no MetaData or annotations.
+15:56:08,571 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain" has no MetaData or annotations.
+15:56:08,572 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIMain_Roo_JavaBean" has no MetaData or annotations.
+15:56:08,580 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.conta.UIConta" has no MetaData or annotations.
+15:56:08,591 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.conta.UIConta_Roo_JavaBean" has no MetaData or annotations.
+15:56:08,592 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.conta.UIConta_Roo_Serializable" has no MetaData or annotations.
+15:56:08,592 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.conta.UiContaListener" has no MetaData or annotations.
+15:56:08,602 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$BooleanWebContextInitParameter" has no MetaData or annotations.
+15:56:08,607 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$DisableUnicodeEscaping" has no MetaData or annotations.
+15:56:08,608 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebContextInitParameter" has no MetaData or annotations.
+15:56:08,609 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration$WebEnvironmentEntry" has no MetaData or annotations.
+15:56:08,609 (main) INFO  [DataNucleus.MetaData] - Class "com.sun.faces.config.WebConfiguration" has no MetaData or annotations.
+15:56:08,619 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaDataOnDemand" has no MetaData or annotations.
+15:56:08,620 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+15:56:08,621 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+15:56:08,650 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaIntegrationTest" has no MetaData or annotations.
+15:56:08,655 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+15:56:08,656 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+15:56:08,657 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ContaServiceIntegrationTest" has no MetaData or annotations.
+15:56:08,657 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.ExtratoTest" has no MetaData or annotations.
+15:56:08,671 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoDataOnDemand" has no MetaData or annotations.
+15:56:08,672 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+15:56:08,673 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+15:56:08,678 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoIntegrationTest" has no MetaData or annotations.
+15:56:08,678 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+15:56:08,679 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.LancamentoIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+15:56:08,680 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaDataOnDemand" has no MetaData or annotations.
+15:56:08,681 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaDataOnDemand_Roo_Configurable" has no MetaData or annotations.
+15:56:08,682 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaDataOnDemand_Roo_DataOnDemand" has no MetaData or annotations.
+15:56:08,683 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaIntegrationTest" has no MetaData or annotations.
+15:56:08,684 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaIntegrationTest_Roo_Configurable" has no MetaData or annotations.
+15:56:08,706 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaIntegrationTest_Roo_IntegrationTest" has no MetaData or annotations.
+15:56:08,707 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.conta.SistemaContaServiceTest" has no MetaData or annotations.
+15:56:08,708 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.utils.TestUtils" has no MetaData or annotations.
+15:56:08,708 (main) INFO  [DataNucleus.MetaData] - Class "br.com.bufunfa.finance.wui.UIContaTest" has no MetaData or annotations.
+15:56:08,939 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Development/github/bufunfa/Finance/target/classes/br/com/bufunfa/finance/conta/Conta.class" with enhanced definition
+15:56:08,972 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Development/github/bufunfa/Finance/target/classes/br/com/bufunfa/finance/conta/Lancamento.class" with enhanced definition
+15:56:08,999 (main) INFO  [DataNucleus.Enhancer] - Updating class file "file:/home/camilo/Development/github/bufunfa/Finance/target/classes/br/com/bufunfa/finance/conta/SistemaConta.class" with enhanced definition
+15:56:09,000 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 3 classes. Timings : input=857 ms, enhance=239 ms, total=1096 ms. Consult the log for full details

@@ -50,6 +50,15 @@ public interface ISistemaContaService {
 	 */
 	public RelatorioSaldoCaixa getSaldoOperacionalCaixa(Long idSistemaConta, Date inicio, Date fim);
 	
-	//FIXME Adicionar metodo de balanco patrimonial e teste servico
+	
+	/**
+	 * Retorna um relatorio de balanco patrimonial
+	 * @param idSistemaConta id do sistema de contas
+	 * @param inicio inicio do periodo do balanco
+	 * @param fim final do periodo do balanco
+	 * @return balanco patrimonial do periodo
+	 */
+	public BalancoPatrimonial getBalancoPatrimonial(Long idSistemaConta,
+			Date inicio, Date fim);
 
 }

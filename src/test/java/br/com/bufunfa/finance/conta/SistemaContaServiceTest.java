@@ -34,6 +34,77 @@ public class SistemaContaServiceTest {
 		
 	}
 	
+	//FIXME fazer teste de balanco pationial
+	@Test
+	public void testGetBalancoPatrimonial() {
+		sistemaContaService.addSistemaConta("SistemaConta");
+    	List<SistemaConta> lista = SistemaConta.findAllSistemaContas();
+		Assert.assertNotNull(lista);
+		Assert.assertTrue(lista.size() > 0);
+		
+		SistemaConta novo = null;
+		for (SistemaConta sistemaConta : lista) {
+			if("SistemaConta".equals(sistemaConta.getNome())) {
+				novo = sistemaConta;
+			}
+		}
+		
+		Assert.assertNotNull(novo);
+		Assert.assertNotNull(novo.getId());
+		Assert.assertNotNull(novo.getIdContaRoot());
+		
+		Conta ativo = novo.getContaAtivo();
+		Conta passivo = novo.getContaPassivo();
+		
+		
+		SistemaContaIntegrationTest.adicionaAlgunsAtivos(ativo);
+		SistemaContaIntegrationTest.adicionaAlgunsPassivos(passivo);
+		
+		/*
+		 * retorna o balanco patrimonial em 30/1/2010
+		 */
+		
+		BalancoPatrimonial balanco = sistemaContaService.getBalancoPatrimonial(
+				novo.getId(), 
+				TestUtils.createDate(2010, 1, 10), TestUtils.createDate(2010, 1, 15));
+		
+		Assert.assertNotNull(balanco);
+		
+		BalancoPatrimonial balancoEsperado = new BalancoPatrimonial(
+				new BigDecimal("50000"),
+				new BigDecimal("-10500"),
+				TestUtils.createDate(2010, 1, 10), 
+				TestUtils.createDate(2010, 1, 15));
+		BigDecimal patrimonioLiquidoEsperado = new BigDecimal("39500.00");
+		
+		Assert.assertEquals(balancoEsperado.getAtivo(), balanco.getAtivo());
+		Assert.assertEquals(balancoEsperado.getPassivo(), balanco.getPassivo());
+		Assert.assertTrue(DateUtil.isDayMonthYearEqual(balancoEsperado.getInicioPeriodo(), balanco.getInicioPeriodo()));
+		Assert.assertTrue(DateUtil.isDayMonthYearEqual(balancoEsperado.getFinalPeriodo(), balanco.getFinalPeriodo()));
+		Assert.assertEquals(patrimonioLiquidoEsperado, balanco.getPatrimonioLiquido());
+		
+		//verifica o balanco, sem passar o inicio do periodo
+		//nesse caso, deve vir o balanco desde o 1o lancamento
+		balanco = sistemaContaService.getBalancoPatrimonial(
+				novo.getId(), 
+				null, TestUtils.createDate(2010, 1, 30));
+		
+		Assert.assertNotNull(balanco);
+		balancoEsperado = new BalancoPatrimonial(
+				new BigDecimal("55000"),
+				new BigDecimal("-30500"),
+				null, 
+				TestUtils.createDate(2010, 1, 30));
+		patrimonioLiquidoEsperado = new BigDecimal("24500.00");
+		
+		Assert.assertEquals(balancoEsperado.getAtivo(), balanco.getAtivo());
+		Assert.assertEquals(balancoEsperado.getPassivo(), balanco.getPassivo());
+		Assert.assertTrue(DateUtil.isDayMonthYearEqual(balancoEsperado.getFinalPeriodo(), balanco.getFinalPeriodo()));
+		Assert.assertNull(balanco.getInicioPeriodo());
+		Assert.assertEquals(patrimonioLiquidoEsperado, balanco.getPatrimonioLiquido());
+		
+	}
+	
 	@Test
     public void testGetSaldoOperacionalDeCaixa() {
     	sistemaContaService.addSistemaConta("SistemaConta");
@@ -191,5 +262,5 @@ public class SistemaContaServiceTest {
 		Assert.assertEquals(rootConta.getId(), ativo.getIdFather());
 		Assert.assertEquals(rootConta.getId(), passivo.getIdFather());
 	}
-
+	
 }
